@@ -1,0 +1,464 @@
+<lang>
+	<dot>&#8226;</>
+    <badge>勋章</>
+	<play>开始游戏</>
+	<rank>排行</>
+	<about>关于</>	
+	
+	<warrior>战士</>
+	<mage>法师</>
+	<rogue>游侠</>
+	<huntress>女猎</>
+	
+	<mastery>进阶</>
+	<newgame>开始新游戏</>
+	<loadgame>加载游戏</>
+	
+	<unlock_challenge_en>To unlock \"Challenges\", win the game with any character class.</>
+	<unlock_challenge>要解锁 "挑战模式"，必须先使用任意角色通关一次。</>
+	
+	<erase_current_game_en>Erase current game</>
+	<erase_current_game>覆盖现有存档</>
+	
+	<depth_lvl_en>Depth: %d, level: %d</>
+	<depth_lvl>第 %d 层, 等级 %d</>
+	
+	<unlock_en>To unlock this character class, slay the 3rd boss with any other class</>
+	<unlock>解锁该职业需要使用任意其他职业杀死第三层的BOSS</>
+	
+	<really_en>Do you really want to start new game?</>
+	<really>你真的想要重新开始游戏么？</>
+	
+	<start_scene_warning_en>Your current game progress will be erased.</>
+	<start_scene_warning>你当前的游戏进度将被覆盖。</>
+	
+	<start_scene_yes_en>Yes, start new game</>
+	<start_scene_yes>是的，重新开始</>
+	
+	<start_scene_no_en>No, return to main menu</>
+	<start_scene_no>不，返回主菜单</>
+	
+	<wndchallenge_title_en>Challenges</>
+	<wndchallenge_title>挑战</>
+	
+	<challenge_name_ondit>节食</>
+	<challenge_faith_armor>信念就是武器</>
+	<challenge_phar>药物恐怖</>
+	<challenge_barl>贫瘠的土地</>
+	<challenge_swit>群体智慧</>
+	<challenge_intodar>在黑暗中</>
+	<challenge_forune>禁咒</>
+	
+	<war_perks_1>战士起始拥有11点力量.</>
+	<war_perks_2>战士开局时拥有一柄独特的短剑。这柄短剑稍后能够进行 "重铸" 用于升级其他近战武器.</>
+	<war_perks_3>战士不是很擅长投掷武器。</>
+	<war_perks_4>吃下食物能够恢复生命值。</>
+	<war_perks_5>开局时力量药水就已经被鉴定过了.</>
+	
+	<mage_perks_1>法师开局时带有一柄独特的魔弹法杖。这柄法杖稍后能够进行"祛魔"用于升级其他法杖.</>
+	<mage_perks_2>法师的法杖充能更加迅速.</>
+	<mage_perks_3>吃下食物时背包里的所有法杖都会恢复一点充能.</>
+	<mage_perks_4>法师能够使用法杖作为近战武器.</>
+	<mage_perks_5>开局时鉴定卷轴就已经鉴定过了.</>
+	
+	<rogue_perks_1>游侠开局时带有暗影指环+1.</>
+	<rogue_perks_2>游侠装备上指环就能马上鉴定出它.</>
+	<rogue_perks_3>游侠更适合穿戴轻甲,这能够提升他的闪避率.</>
+	<rogue_perks_4>游侠擅长侦测隐藏的门和陷阱.</>
+	<rogue_perks_5>游侠不吃东西的情况下能够撑得更久.</>
+	<rogue_perks_6>开局时魔法地图卷轴就已经鉴定过了.</>
+	
+	<huntress_perks_1>女猎开局时生命只有15点.</>
+	<huntress_perks_2>女猎开局时拥有一支独特的可升级的回旋镖.</>
+	<huntress_perks_3>女猎擅长使用投掷武器,在力量富余时使用投掷武器能够造成额外伤害.</>
+	<huntress_perks_4>女猎能够通过露珠恢复更多生命.</>
+	<huntress_perks_5>女猎能够侦测附近的怪物,即使它们藏在墙后.</>
+	
+	<gladiator_desc>使用近战武器成功命中目标能够让_角斗士_进入连击模式,每进行一次成功连击都能造成额外伤害.</>
+	<berserker_desc>当承受一定程度的伤害后,_狂战士_会进入狂暴状态,可观地提升伤害输出能力.</>
+	<warlock_desc>_术士_会将他杀死的敌人的魂魄收走用于治疗与果腹.</>
+	<battlemage_desc>手持法杖战斗时,_战法师_能够造成和法杖充能点数相关的额外伤害.每次命中敌人都能为法杖恢复一点充能.</>
+	<assassin_desc>_刺客_进行突袭时能够对目标造成额外伤害.</>
+	<freerunner_desc>_疾行客_移动速度差不多有大多数怪物的两倍快.他奔跑起来脚步如飞,敌人很难命中..但饿肚子或者负重的时候就无法发挥这种优势了.</>
+	<sniper_desc>狙击手能够侦测出敌人护甲的弱点,在使用投掷武器时无视护甲高效得进行攻击.</>
+	<warden_desc>与大自然强烈的联系赋予了守望者从草木中收集露珠和种子的能力.践踏草丛时她还会获得一个临时的防护效果.</>
+	
+	<badge_MONSTERS_SLAIN_1_desc>10敌斩</>
+	<badge_MONSTERS_SLAIN_2_desc>50敌斩</>
+	<badge_MONSTERS_SLAIN_3_desc>150敌斩</>
+	<badge_MONSTERS_SLAIN_4_desc>250敌斩</>
+	<badge_GOLD_COLLECTED_1_desc>收集100金</>
+	<badge_GOLD_COLLECTED_2_desc>收集500金</>
+	<badge_GOLD_COLLECTED_3_desc>收集2500金</>
+	<badge_GOLD_COLLECTED_4_desc>收集7500金</>
+	
+	<badge_LEVEL_REACHED_1_desc>升到等级6</>
+	<badge_LEVEL_REACHED_2_desc>升到等级12</>
+	<badge_LEVEL_REACHED_3_desc>升到等级18</>
+	<badge_LEVEL_REACHED_4_desc>升到等级24</>
+	
+	<badge_ALL_POTIONS_IDENTIFIED_desc>全部药水已鉴定</>
+	<badge_ALL_SCROLLS_IDENTIFIED_desc>全部卷轴已鉴定</>
+	<badge_ALL_RINGS_IDENTIFIED_desc>全部指环已鉴定</>
+	<badge_ALL_WANDS_IDENTIFIED_desc>全部法杖已鉴定</>
+	<badge_ALL_ITEMS_IDENTIFIED_desc>全部药水,卷轴,指环和法杖都已鉴定</>
+	
+	<badge_ALL_BAGS_BOUGHT_desc>所有行囊都已购入</>
+	<badge_DEATH_FROM_FIRE_desc>死于烈火</>
+	<badge_DEATH_FROM_POISON_desc>死于中毒</>
+	<badge_DEATH_FROM_GAS_desc>死于毒气</>
+	<badge_DEATH_FROM_HUNGER_desc>死于饥饿</>
+	<badge_DEATH_FROM_GLYPH_desc>死于魔法</>
+	<badge_DEATH_FROM_FALLING_desc>死于跌落</>
+	<badge_YASD_desc>死于烈火,中毒,毒气和饥饿</>
+	
+	<badge_BOSS_SLAIN_1_desc>斩杀第一个Boss</>
+	<badge_BOSS_SLAIN_2_desc>斩杀第二个Boss</>
+	<badge_BOSS_SLAIN_3_desc>斩杀第三个Boss</>
+	<badge_BOSS_SLAIN_4_desc>斩杀第四个Boss</>
+	
+	<badge_BOSS_SLAIN_1_ALL_CLASSES_desc>使用战士,法师,游侠和女猎斩杀第一个Boss</>
+	<badge_BOSS_SLAIN_3_ALL_SUBCLASSES_desc>使用角斗士,狂战士,术士,战法师,疾行客,刺客,狙击手和守望者斩杀第三个Boss</>
+	<badge_RING_OF_HAGGLER_desc>获得折扣指环</>
+	<badge_RING_OF_THORNS_desc>获得荆棘指环</>
+	
+	<badge_STRENGTH_ATTAINED_1_desc>力量提升至13点</>
+	<badge_STRENGTH_ATTAINED_2_desc>力量提升至15点</>
+	<badge_STRENGTH_ATTAINED_3_desc>力量提升至17点</>
+	<badge_STRENGTH_ATTAINED_4_desc>力量提升至19点</>
+	
+	<badge_FOOD_EATEN_1_desc>吃下10块食物</>
+	<badge_FOOD_EATEN_2_desc>吃下20块食物</>
+	<badge_FOOD_EATEN_3_desc>吃下30块食物</>
+	<badge_FOOD_EATEN_4_desc>吃下40块食物</>
+	
+	<badge_ITEM_LEVEL_1_desc>道具升级至3级</>
+	<badge_ITEM_LEVEL_2_desc>道具升级至6级</>
+	<badge_ITEM_LEVEL_3_desc>道具升级至9级</>
+	<badge_ITEM_LEVEL_4_desc>道具升级至12级</>
+	
+	<badge_RARE_desc>斩杀所有稀有怪物</>
+	<badge_VICTORY_desc>获得尼德罗护符</>
+	<badge_VICTORY_ALL_CLASSES_desc>使用战士,法师,游侠和女猎获得尼德罗护符</>
+	
+	<badge_MASTERY_COMBO_desc>七连击</>
+	<badge_POTIONS_COOKED_1_desc>调配3瓶药水</>
+	<badge_POTIONS_COOKED_2_desc>调配6瓶药水</>
+	<badge_POTIONS_COOKED_3_desc>调配9瓶药水</>
+	<badge_POTIONS_COOKED_4_desc>调配12瓶药水</>
+	
+	<badge_NO_MONSTERS_SLAIN_desc>不杀死任何怪物通过一层</>
+	<badge_GRIM_WEAPON_desc>使用残暴武器杀死怪物</>
+	<badge_PIRANHAS_desc>杀死6条食人鱼</>
+	<badge_NIGHT_HUNTER_desc>在夜间杀死15只怪物</>
+	
+	<badge_GAMES_PLAYED_1_desc>完成10局游戏</>
+	<badge_GAMES_PLAYED_2_desc>完成100局游戏</>
+	<badge_GAMES_PLAYED_3_desc>完成500局游戏</>
+	<badge_GAMES_PLAYED_4_desc>完成2000局游戏</>
+	
+	<badge_HAPPY_END_desc>胜利归来</>
+	<badge_CHAMPION_desc>完成挑战</>
+	<badge_SUPPORTER_desc>感谢您的支持!</>
+	
+	<intro>你来这里之前各色英雄曾纷至沓来前往地牢冒险。有些人满载宝藏和魔法物品而归，绝大多数的人则从此杳无音信。但是从来没有一人能取回传闻中藏在地牢极深处的尼德罗护符。&#x000A;&#x000A;你认为自己已经准备好迎接挑战，但至为重要的是，你感觉幸运正眷顾着你。是时候出发开始属于自己的冒险了！</>
+	<inter_desc>正在下楼...</>
+	<inter_asce>正在上楼...</>
+	<inter_load>载入中...</>
+	<inter_resurr>复活中...</>
+	<inter_return>返回中...</>
+	<inter_falling>跌落中...</>
+	
+	<inter_filenotfound>未找到文件.出于某些原因.</>
+	<inter_errgeneric>出现问题了...</>
+	
+	<item_packfull>你的背包太满装不下%s了</>
+	<item_broken>使用太频繁，你的%s坏了</>
+	<item_goingbroken>使用太频繁，你的%s濒临破坏</>
+	<item_drop>丢弃</>
+	<item_throw>扔出</>
+	
+	<wndstory_sewers>地牢位于城市正下方,较上层的部分实际上构成了城市的下水道系统.作为名义上归属于城市的一部分,这几层并不那么危险.虽然不会有人会把这里称为安全地带,但你在这里起码无需面对邪恶的魔法.</>
+	<wndstory_prison>许多年前这里兴建了地下牢狱用于囚禁那些最危险的犯人.那个时候这个想法看起来非常明智,因为这里确实很难逃脱.但很快,黑暗的瘴气从下方蔓延而来,让犯人和看守都陷入了疯狂.最终尽管仍然有许多犯人还关押在这里,牢狱还是被废弃了.</>
+	<wndstory_caves>废弃牢狱下方延伸出的洞穴人迹罕至.城市难以在这么深的地底进行开发,矿物贫瘠也无法勾起矮人的兴趣.过去这里曾一度是城邦之间驿道的贸易前哨,但自从矮人之都衰落后这里也就荒废了.如今只有那些无处不在的豺狼人和地下生物还在这里游荡.</>
+	<wndstory_metropolis>矮人之都曾是最伟大的矮人城邦.在其全盛时期矮人的机械军团曾成功地抵御古神和它的恶魔军团的入侵.但传闻凯旋的战士也带回了腐朽的种子,这场胜利也标志着这座地下王国衰败的开端.</>
+	<wndstory_halls>过去这里曾是矮人之都的郊区.对抗古神获得代价高昂的胜利后,矮人国度太过虚弱,无法清除这里残留的恶魔.渐渐恶魔占据了这里,如今这里被称作恶魔大厅.&#x000A;&#x000A;罕有冒险者能抵达这么深处的地底来...</>
+	<dagger_desc>一柄铁匕首,木质手柄磨损得很厉害.</>
+	<knuckles_desc>一块贴合手指关节形状的铁片.</>
+	<quarterstaff_desc>一根硬质木杖,末端钉有铁头.</>
+	<spear_desc>尖端装上锋利铁锥的细长木杆.</>
+	<mace_desc>这柄武器的铁头能够造成大量伤害.</>
+	<sword_desc>锋利的钢刃闪闪发光令人心安.</>
+	<longsword_desc>这柄长刃如能发挥它沉重的优势,那么每一次劈砍都能造成大量伤害.</>
+	<battleaxe_desc>这柄战斧斧刃使用了大量钢材使得它每一次劈砍都能造成可观的伤害.</>
+	<warhammer_desc>罕有生物能够承受这柄铅与钢锻造的沉重钝器的碾压性打击,但也只有那些最强壮的冒险者才能自如地挥动它.</>
+	<glaive_desc>由一根长柄和末端的刀刃构成的长杆武器.</>
+	<shortsword_desc>一柄的确相当短,只是比匕首稍长寸许的短剑.</>
+	<boomerang_desc>将它扔向敌人这柄削平的木质飞镖会自动回到投资者的手中.</>
+	<dart_desc>这些简单的金属尖刺经过配重平衡能够精确地飞行,手腕一抖便能按你的意志飞向目标.</>
+	<javelin_desc>这柄金属杆经过配重平衡能够让它的尖锥稳稳保持在前,刺破空气飞向目标.</>
+	<incendiarydart_desc>这些飞镖上的尖刺会在命中时钉入目标同时附在飞镖上的不稳定化合物会爆炸点燃火焰.</>
+	<curaredart_desc>这些恶毒的小飞镖造成不了多少伤害但却能够让目标麻痹使其在一段时间内都无助地陷在原地无法移动.</>
+	<shuriken_desc>带有利刃的星形铁片,在命中目标时能够造成可观的伤害.它们能够以很高的频率丢掷.</>
+	<tamahawk_desc>这种用来投掷的斧头并不沉重,但要想自如地使用它依然需要可观的力量.</>
+	
+	<weapon_identity>你已经足够熟悉你的%s,能够鉴定它了.它其实是%s.</>
+	<weapon_incompatible>不同类型的魔力干扰使得护甲符文失去了效力.</>
+	
+	<blobfire_tiledesc>烈火肆虐.</>
+	<burning_burned_to_death>你被烧死了...</>
+	<burning_burns_up>%s烧起来了!</>
+	
+	<frost>冰冻</>
+	<buffparalysis>麻痹</>
+	<light>光明</>
+	
+	<buffslow_str>迟缓</>
+	<vertigo_str>晕眩</>
+	<terror_str>恐慌</>
+	
+	<broken>损毁后的</>
+	<upgraded>升级后的</>
+	<degraded>降级后的</>
+	<this_is_tier_melee_weapon>此%s乃%s%d階近戰武器.</>
+	<its_average_damage>它的平均伤害为每击%d点.</>
+	<its_typical_damage>一般来说它的平均伤害为每击%d点,此外想要自如地使用它通常需要%d点力量.</>
+	<too_heavy_for_you>或许此武器对你来说过于沉重.</>
+	<this_is_a_rather_weapon>这是一柄%s的武器.</>
+	<and>且</>
+	<but>但却</>
+	<fast>快速</>
+	<slow>缓慢</>
+	<accurate>精准</>
+	<inaccurate>不精准</>
+	<balanced_faster>它被磨制得更加快速了.</>
+	<balanced_accurate>它被磨制得更加精准了.</>
+	<its_enchanted>它已被附魔.</>
+	
+	<inadequate_strength_accuracy_speed>因为你力量过于孱弱这柄%s的攻击速度和精准都下降了.</>
+	<excess_strength_damage_increased>因为你力量超过需求这柄%s的攻击速度和精准都增加了.</>
+	<hold_ready>你正握着%s</>
+	<cursed_not_let_go>,由于它被诅咒了,所以你没办法放手</>
+	<feel_malevolent_lurking>你感到%s中蕴藏着恶毒的魔法.</>
+	
+	<dagger>匕首</>
+	<knuckleduster>指虎</>
+	<quarterstaff>长棍</>
+	<spear>长枪</>
+	<mace>铁槌</>
+	<sword>剑</>
+	<longsword>长剑</>
+	<battle_axe>战斧</>
+	<war_hammer>战锤</>
+	<glaive>大刀</>
+	
+	<REFORGE>重铸</>
+	<select_weapon_upgrade>选择一件武器来升级</>
+	<reforged_short_sword_upgrade>你重铸这柄短剑升级了你的%s</>
+	<not_upgrade_boomerang>你不能用这种方式来升级回旋镖</>
+	
+	<short_sword>短剑</>
+	<Missile_weapon>投掷武器</>
+	<i_know_im_doing>是的我明白自己在做什么</>
+	<i_changed_my_mind>不我改注意了</>
+	<you_really_equip_as_melee_weapon>你真的要把它作为近战武器装备吗?</>
+	<boomerang>回旋镖</>
+	<average_damage_weapon_hit>\n\n此武器的平均伤害为每击%d点.</>
+	
+	<dart>飞镖</>
+	<crippled_str>残疾</>
+	<shuriken>手里剑</>
+	<tomahawk>手斧</>
+	<Bleeding>流血</>
+	<bled_to_death>你失血过多而死...</>
+	
+	<welcom_to_level>欢迎来到像素地牢的第%d层！</>
+	<welcom_back_to_level>欢迎回到像素地牢的第%d层！</>
+	<be_caution_night>当心,夜晚时的地牢会更加危险!</>
+	<step_echo_dungeon>地牢里回荡着你的脚步声.</>
+	<hear_water_splash>你听见附近有水流滴溅的声音.</>
+	<smell_vegetation_air>空气中有淡淡的草木气息.</>
+	<floor_hide_secrets>这种氛围暗示着这一层地牢藏着许多秘密.</>
+	
+	<dont_know_what_there>你不知道那边有什么.</>
+	
+	<Stats>统计</>
+	<Buffs>效果</>
+	<Experience>经验</>
+	<Strength>力量</>
+	<Health>生命</>
+	<Gold_Collected>已收集金币</>
+	<Maximum_Depth>最深层数</>
+	<wndhero_statstab_title>%d级%s</>
+	<Catalogus>概览</>
+	<Journal>日志</>
+	<Scrolls>卷轴</>
+	<Potions>药水</>
+	
+	<Select_a_cell_to_examine>选择一个方块检查</>
+	
+	<Amok>狂乱</>
+	<Yog_Dzewa>犹格-达兹瓦</>
+	<echo_Yog_Dzewa>犹格-达兹瓦回响</>
+	<yog_desc>犹格-达兹瓦是一名来自混沌国度的强大古神.百年前,古代矮人惨胜了它所率领的恶魔军团,但却无力杀死这位神灵本身,因此便将它镇压在了城市下方的大厅中,矮人们相信它太过虚弱再也不会苏醒过来.</>
+	<rotting_fist>腐坏之拳</>
+	<burning_fist>燃烧之拳</>
+	<gods_larva>古神幼虫</>
+	<killed_you>%s杀死了你...</>
+	<Caustic_ooze>腐泥</>
+	
+	<Levitating>悬浮</>
+	
+	<Invisible>隐形</>
+	<Rooted>生根</>
+	
+	<s_hit_s>%s击中了%s</>
+	<s_defeated_s>%s击败了%s</>
+	<s_s_your_attack>%s%s了你的进攻</>
+	<s_s_s_s_attack>%s%s了%s的进攻</>
+	<The_pain_snapped_out_paralysis>解除了麻痹的%s重新感觉到了疼痛</>
+	
+	<Mind_vision>灵视</>
+	<Shadowmelded>暗影融合</>
+	
+	<Charmed>受惑</>
+	
+	<Ring_of_Haggler>折扣指环</>
+	
+	<skeletonkey_info>这把钥匙看起来非常肃穆:钥匙头部形如骷髅.或许它用于开启某些重要的门.</>
+	
+	<Shopkeeper_description>这个悍勇的家伙看起来更适合在大城市而非地牢里做生意.他厚颜无耻的标价解释了为什么他选择来这里.</>
+	
+	<Mob_description>作者正抓头挠耳地写着新说明!</>
+	
+	<mob_died>你听到远处有谁倒下了</>
+	<mob_flee_status>%s正在逃窜</>
+	<mob_sleeping_status>%s正在睡觉</>
+	<mob_wandering_status>%s正在游荡</>
+	<mob_huning_status>%s正在狩猎</>
+	<mob_passive_status>%s是被动型生物</>
+	
+	<Food_info>没啥值得特别一提的:肉干,一些小饼干-诸如此类.</>
+	<MysteryMeat_info>不怕死你就吃!</>
+	<ChargrilledMeat_info>看起来蛮不错的肉排.</>
+	<FrozenCarpaccio_info>一片冻生肉.只能切成小条来吃.这么吃味道好极了.</>
+	<Pasty_info>正宗的康沃尔馅饼,按传统填满了牛肉和马铃薯.</>
+	
+	<Barkskin>树皮</>
+	<Plant_Seed_Info>将种子扔在你希望%s生长的地方.\n\n%s</>
+	<Firebloom_Desc>烈焰花会将触碰它的东西点燃.</>
+	<Icecap_Desc>被触碰的冰帽草会释放出花粉将附近的一切冰冻起来.</>
+	<ResultDescriptions_MOB>被第%2$d层的%1$s残忍杀害.</>
+	<ResultDescriptions_BOSS>被第%2$d层的%1$s残忍杀害.</>
+	<ResultDescriptions_WAND>在第%2$d层捣鼓自己的%1$s时出了意外.</>
+	<ResultDescriptions_GLYPH>被第%2$d层的%1$s残忍杀害.</>
+	<ResultDescriptions_TRAP>在第%2$d层因触发%1$s而死于非命.</>
+	<ResultDescriptions_BOMB>在第%d层被炸死.</>
+	<ResultDescriptions_Burning>在第%d层焚烧至死.</>
+	<ResultDescriptions_Hunger>在第%d层活活饿死.</>
+	<ResultDescriptions_Poison>在第%d层毒发身亡.</>
+	<ResultDescriptions_Gas>在第%d层长眠于毒气中.</>
+	<ResultDescriptions_Bleeding>在第%d层因失血过多而致死.</>
+	<ResultDescriptions_Ooze>在第%d层死在腐蚀泥浆中.</>
+	<ResultDescriptions_Fall>在第%d层尝试信仰之跃失败.</>
+	<ResultDescriptions_Win>得到了尼德罗护符.</>
+	
+	<Sorrowmoss_Desc>悲伤藓是一种花瓣锋利如刃的花(并非苔藓),花瓣上涂满了致命的毒液.</>
+	<Dreamweed_Desc>触碰到幻梦草会刺激它分泌出一种令人陷入困惑幻觉的闪光气体.</>
+	
+	<ConfusionGas_tileDesc>一团致幻的毒气在此处回旋弥漫.</>
+	<Sungrass_Desc>太阳草以其汁液的治愈特效而闻名.</>
+	<Sungrass_Health_toString>草药治愈</>
+	
+	<Earthroot_Desc>被生物触碰到的地缚根会在生物体表用根须形成一种天然的护铠.</>
+	<Fadeleaf_Desc>触碰到褪叶草的生物会被传送到当前层的某个随机位置.</>
+	<Rotberry_Desc>这种植物的浆果尝起来非常甜,甜到死.</>
+	
+	<Rotberry_Seed_collect>这枚种子发出刺耳的尖啸,久久回荡在地牢当中!</>
+	<ToxicGas_tileDesc>绿森森的毒气在此回旋弥漫.</>
+	<ToxicGas_onDeath>你死在了毒气中...</>
+	<ParalyticGas_tileDesc>一团致人麻痹的气体在此处回旋弥漫.</>
+	<DeferedDamage_toString>推延伤害%d</>
+	<ClothArmor_Desc>这件单薄的护甲能够提供基本的防护.</>
+	<LeatherArmor_Desc>使用鞣制怪物皮制成的护甲.比布甲稍沉但防护效果也更好.</>
+	<MailArmor_Desc>铁片相连制成的护甲,坚韧而富弹性.</>
+	<ScaleArmor_Desc>将金属鳞片缝进皮革制成的兼顾弹性与防护性能的护甲.</>
+	<PlateArmor_Desc>使用大量金属板打造而成,为能够承受得了它那惊人分量的冒险者提供无可比拟的防护.</>
+	
+	<Armor_Equip_Cursed>你感到你的%s紧紧包在身上,疼痛难忍.</>
+	<Armor_Identify>你现在足够熟悉你的%s能够鉴定出它来了.它其实是%s.</>
+	<Armor_Txt_Incompatible>不同类型的魔力干扰使得护甲符文失去了效力.</>
+	<Bounce_Txt_Bounce>反弹%s</>
+	<Affection_Txt_Affection>魅惑%s</>
+	<AntiEntropy_Txt_AntiEntropy>反熵%s</>
+	<MirrorImage_description>幻象模样与你很相似,但会微微晃动,颜色也略苍白.</>
+	<Hunger_Txt_Hungry>你感到有点饿.</>
+	<Hunger_Txt_Starving>你饥肠辘辘!</>
+	<Hunger_Txt_Death>你饿死了...</>
+	<Hunger_toString_Hungry>饥饿</>
+	<Hunger_toString_Starving>饥肠辘辘</>
+	<Metabolism_Txt_Metabolism>代谢%s</>
+	
+	<Stench_Txt_Stench>恶臭%s</>
+	<Viscosity_Txt_Viscosity>粘稠%s</>
+	
+	<Displacement_Txt_Displacement>置换%s</>
+	<Entanglement_Txt>缠结%s</>
+	<Multiplicity_Txt>分身%s</>
+	<Potential_Txt>潜能%s</>
+	<Armor_Info_damage_absorption>这件%s在每次抵挡攻击时能够吸收%d点伤害.</>
+	<Armor_Info_inadequate_strength>由于你的力量不足因此移动速度和防御技巧都下降了.</>
+	<Armor_Info_inadequate_strength_wearing_decrease>由于你的力量不足这件护甲会使你的移动速度和防御技巧下降.</>
+	<Armor_Info_typical_damage_require_strength>一般来说%s在每次抵挡攻击时能够吸收点%d伤害,并且穿戴它需要%d点力量.</>
+	<Armor_Info_armor_too_heavy>或许这件护甲对你来说过于沉重.</>
+	<Armor_Info_enchanted>它已被附魔.</>
+	<Armor_Info_wearing>你正穿着%s</>
+	<Armor_Info_cursed_powerless>由于它被诅咒了,所以你没办法脱下它</>
+	<Armor_Info_feel_malevolent_magic>你感到%s中蕴藏着恶毒的魔法</>
+	
+	<scale_armor>鳞甲</>
+	<plate_armor>板甲</>
+	<mail_armor>链甲</>
+	<leather_armor>皮甲</>
+	<cloth_armor>布甲</>
+	
+	<WandOfTeleportation_Desc>这柄法杖释放出的魔力能够将生物不受意志驱使地随机传送到当前层的某个地方.</>
+	<WandOfSlowness_Desc>这柄法杖能够让生物移动和攻击速度在效果结束前都减半.</>
+	<WandOfFirebolt_Desc>这柄法杖发出一道魔力火焰,能够引燃可燃地形,并伤害和点燃击中的生物.</>
+	<WandOfPoison_Desc>这柄有些扭曲的法杖释放的恶毒魔力能够让目标染上致命毒素.中毒的生物在效果结束前会持续掉血.效果持续时间随着法杖等级的提升而延长.</>
+	<WandOfRegrowth_Desc>"生生不息,周而复始!"</>
+	<WandOfBlink_Desc>这柄法杖能够将你朝指定方向传送.生物或无法移动的屏障会阻挡传送.</>
+	<WandOfLightning_Desc>这柄法杖向前放出一道致命的电弧,能够对相邻而站的一群生物造成伤害.</>
+	<WandOfAmok_Desc>法杖发出的紫色光芒能够让目标陷入狂乱随机攻击附近的生物.</>
+	<WandOfFlock_Sheep_Desc>这是一只魔法绵羊.它有什么神奇的地方呢?你无法杀死它,直到它自己神奇地消失,一边咀嚼反刍的食物一边用那茫然的眼神盯着你.</>
+	<WandOfFlock_Desc>这柄法杖能够召唤出一群魔法绵羊,制造出无法通过的临时屏障.</>
+	<WandOfDisintegration_Desc>这柄法杖发出一道毁灭性的能量,穿透所有途经的生物.它击中的目标越多,对每个目标造成的伤害就越大.</>
+	<WandOfAvalanche_Desc>法杖释放的魔弹碰到墙壁或别的固态屏障时会造成土石崩塌,伤害并晕眩附近受影响区域的所有生物.</>
+	<WandOfMagicMissile_Desc>这柄法杖能够发出纯净魔力构成的魔弹,对目标生物造成一定的伤害.</>
+	<Hero_Leave>不能就这么轻易离开像素地牢.</>
+	<Hero_Level_Up>升级!</>
+	<Hero_New_Level>欢迎升到第%d级！现在你生命值有所增加,专注力也提高了.你将更容易击中敌人并闪避它们的进攻.</>
+	<Hero_Something_Else>这里还有些别的东西</>
+	<Hero_Locked_Chest>箱子上着锁,你没有匹配的钥匙</>
+	<Hero_Locked_Door>你没有匹配的钥匙</>
+	<Hero_Noticed_Smth>你留意到一些东西</>
+	<Hero_Search>搜寻</>
+	<Hero_You_Now_Have>你获得了%s</>
+	<SeedPouch_Info>这只天鹅绒的小口袋能够用于存放各类种子.非常方便.</>
+	
+	<IronKey_From_Depth>用于第%d层的铁钥匙</>
+	<IronKey_Info>这把古老的铁钥匙上的缺口磨损地相当厉害;年代久远它的皮绳也陈旧不堪.它能开启哪一扇门呢?</>
+	<GoldenKey_Info>这把金钥匙上的缺口精细复杂.或许它能打开某个上锁的箱子?</>
+	<Amulet_Info>尼德罗护符是最强大的已知神器,无人知道它的来历.据说如果它的主人拥有足够强烈的意愿就能说服这枚护符实现任何愿望.</>
+	<Bomb_Info>This is a relatively small bomb, filled with black powder. Conveniently, its fuse is lit automatically when the bomb is thrown.</>
+	<Honeypot_Info>There is not much honey in this small honeypot, but there is a golden bee there and it doesn't want to leave it.</>	
+	<AmuletScene_Txt>终于,你将尼德罗护符攥在了手中.有了它的力量,你既可以统治世界,也可以做些将和平和财富带给人民之类的事.无论如何,你的人生将从此焕然一新,而游戏也将在这里完结.你也可以选择多逗留一段时间.</>
+	<AmuletScene_Exit>就到这里为止吧</>
+	<AmuletScene_Stay>我还没有准备好</>
+	
+	<AlchemyPot_Select_Seed>选择一颗种子扔出</>
+</>
+
+<badge>
+<test>test</>
+</>

@@ -1,0 +1,6 @@
+boost
+Debug
+obj
+*.sdf
+*.suo
+*.user

@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pd">
+      <UniqueIdentifier>{a4d21c00-573d-48e7-ab59-248891c5fb4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="regex">
+      <UniqueIdentifier>{e481a3a3-01ac-4f88-b765-325835fab04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gfx">
+      <UniqueIdentifier>{f68e5a75-acae-4852-9ca5-c003a7a47984}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_byte_order.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_chartables.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_compile.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_config.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_dfa_exec.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_exec.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_fullinfo.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_get.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_globals.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_jit_compile.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_maketables.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_newline.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_ord2utf8.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_refcount.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_scanner.cc">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_string_utils.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_stringpiece.cc">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_study.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_tables.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_ucd.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_valid_utf8.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_version.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcre_xclass.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcrecpp.cc">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\pcreposix.c">
+      <Filter>regex</Filter>
+    </ClCompile>
+    <ClCompile Include="gfx\SDL_draw.c">
+      <Filter>gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\actor.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\alchemypot.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\alphatweener.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\amuletscene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\archs.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\armor.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\attackindicator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\badge.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\badgebanner.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bag.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\banner.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bat.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\belongings.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bestiary.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bitmaptext.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bitmaptextmultiline.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bitmaskemitter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\blob.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\blobemitter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bloodparticle.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bpt.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\brute.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\buff.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\buffindicator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\buffpoison.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bundlable.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\bundle.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\burning.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\busyindicator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\button.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\camera.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\cellemitter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\cellselector.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\char.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\charsprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\chasm.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\checkboxred.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\checkedcell.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\compass.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\crab.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\dangerindicator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\define.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\dewdrop.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\dm300.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\door.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\dungeon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\dungeontilemap.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\elemental.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\emitter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\emoicon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\equipableitem.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\exitbutton.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\eye.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\fireball.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\flameparticle.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\flare.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\floatingtext.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\fogofwar.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\food.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\game.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gamelog.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gamescene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gamesinprogress.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\generator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gizmo.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\glog.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gnoll.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\gold.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\golem.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\goo.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\graph.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\group.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\halo.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\healthbar.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\healthindicator.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\heap.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\hero.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\heroclass.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\herosprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\highlightedtext.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\highlighter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\iceblock.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\icon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\icontitle.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\image.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\interlevelscene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\introscene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\item.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\items.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\itemslot.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\itemsprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\itemstatushandler.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\journal.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\key.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\keys.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\kindofweapon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\king.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\level.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\lightning.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\lightningtrap.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\mimic.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\missilesprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\mob.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\mobsprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\monk.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\movieclip.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\ninepatch.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\noosascript.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\painter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\pathfinder.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\picoPNG.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\pixeldungeon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\pixelparticle.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\pixelscene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\plant.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\plantsprite.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\postweener.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\potion.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\preferences.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\program.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\pushing.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\quad.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\quickslot.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\rat.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\redbutton.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\regularlevel.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\resumebutton.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\ring.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\ripple.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\room.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\scene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\scorpio.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\script.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\scroll.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\scrollpane.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\sewerlevel.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\shader.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\shaman.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\simplebutton.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\simpleresource.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\skeleton.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\skinnedblock.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\smarttexture.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\speck.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\spinner.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\splash.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\standardpainter.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\startscene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\statistics.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\statuspane.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\succubus.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\surfacescene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\swarm.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\tag.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\tengu.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\texture.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\texturecache.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\texturefilm.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\thief.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\tilemap.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\timing.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\titlescene.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\toast.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\toolbar.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\torchhalo.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\toucharea.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\touchscreen.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\toxicgas.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\tweener.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\util.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\visual.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wand.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\warlock.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\weapon.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\window.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndbag.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndchallenges.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndclass.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndmessage.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndoptions.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndstory.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndtabbed.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wndtitledmessage.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wound.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\wraith.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+    <ClCompile Include="pd\yog.cpp">
+      <Filter>pd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gfx\SDL_draw.h">
+      <Filter>gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\actor.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\alchemypot.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\alphatweener.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\amuletscene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\archs.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\armor.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\atlas.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\attackindicator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\attribute.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\badge.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\badgebanner.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bag.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\banner.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bannersprites.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bat.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\belongings.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bestiary.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bitmaptext.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bitmaptextmultiline.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bitmaskemitter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\blob.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\blobemitter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bloodparticle.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bpt.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\brute.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\buff.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\buffindicator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\buffpoison.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bundlable.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\bundle.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\burning.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\busyindicator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\button.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\callback.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\camera.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\cellemitter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\cellselector.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\char.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\charsprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\chasm.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\checkboxred.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\checkedcell.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\colorblock.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\compass.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\component.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\crab.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\dangerindicator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\define.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\dewdrop.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\dm300.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\door.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\dungeon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\dungeontilemap.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\elemental.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\emitter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\emoicon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\equipableitem.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\exitbutton.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\eye.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\fireball.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\flameparticle.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\flare.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\floatingtext.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\fogofwar.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\food.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\game.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gamelog.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gamescene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gamesinprogress.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\generator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gizmo.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\glog.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gnoll.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\gold.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\golem.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\goo.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\graph.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\group.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\halo.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\healthbar.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\healthindicator.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\heap.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\hero.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\heroaction.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\heroclass.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\herodoom.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\herosprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\highlightedtext.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\highlighter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\iceblock.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\icon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\icontitle.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\image.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\interlevelscene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\introscene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\item.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\items.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\itemslot.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\itemsprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\itemstatushandler.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\journal.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\key.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\keys.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\kindofweapon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\king.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\level.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\lightning.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\lightningtrap.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\mimic.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\missilesprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\mob.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\mobsprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\monk.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\movieclip.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\ninepatch.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\noosascript.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\painter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pathfinder.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\picoPNG.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pixeldungeon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pixelparticle.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pixelscene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\plant.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\plantsprite.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\postweener.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\potion.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\preferences.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\program.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pseudopixel.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\pushing.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\quad.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\quickslot.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\rat.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\redbutton.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\regularlevel.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\resizable.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\resumebutton.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\ring.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\ripple.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\room.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\scene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\scorpio.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\script.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\scroll.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\scrollpane.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\sewerlevel.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\shader.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\shadowbox.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\shaman.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\signal.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\simplebutton.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\simpleresource.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\skeleton.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\skinnedblock.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\smarttexture.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\speck.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\spinner.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\splash.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\standardpainter.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\startscene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\statistics.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\statuspane.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\stdafx.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\succubus.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\surfacescene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\swarm.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\tag.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\tengu.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\terrain.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\texture.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\texturecache.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\texturefilm.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\thief.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\tilemap.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\timing.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\titlescene.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\toast.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\toolbar.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\torchhalo.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\toucharea.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\touchscreen.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\toxicgas.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\tweener.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\typedefine.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\util.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\visual.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wand.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\warlock.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\weapon.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\window.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndbag.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndchallenges.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndclass.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wnderror.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndmessage.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndoptions.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndstory.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndtabbed.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wndtitledmessage.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wound.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\wraith.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="pd\yog.h">
+      <Filter>pd</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
