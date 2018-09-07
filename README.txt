@@ -5,6 +5,9 @@ https://github.com/watabou/pixel-dungeon
 I am rewritting the game with c++.
 It's a learning and fun.
 
+There is a file named lang.xml in the data directory.
+It's the language file.
+
 SDL+OpenGL are used and many other software code.
 
 The gamescene is not well rewritten.
