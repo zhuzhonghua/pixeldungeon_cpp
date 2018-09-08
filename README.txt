@@ -14,6 +14,8 @@ The gamescene is not well rewritten.
 
 Maybe in the future, I will use lua to program those code.
 
+Even use javascript to rewrite the entire game.
+
 There is a vs project file.
 
 It's easy to port to other platform(mac, linux, android, ios).
