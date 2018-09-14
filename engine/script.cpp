@@ -30,3 +30,18 @@ Script* Script::get(const std::string& c)
 
 	return _curScript;
 }
+
+void Script::reset()
+{
+	for (std::map<std::string, Script*>::iterator itr = _all.begin();
+		itr != _all.end(); itr++)
+	{
+		itr->second->destroy();
+	}
+	
+	_all.clear();
+
+	// TODO: if need to destroy
+	_curScript->destroy();
+	_curScript= NULL;
+}

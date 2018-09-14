@@ -13,14 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="pd">
-      <UniqueIdentifier>{a4d21c00-573d-48e7-ab59-248891c5fb4c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="regex">
       <UniqueIdentifier>{e481a3a3-01ac-4f88-b765-325835fab04f}</UniqueIdentifier>
     </Filter>
     <Filter Include="gfx">
       <UniqueIdentifier>{f68e5a75-acae-4852-9ca5-c003a7a47984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{1ca950e8-ead0-42b1-b8c2-0687b11373d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pd">
+      <UniqueIdentifier>{0736b506-3b0a-4dd6-8aa8-bac03ad25422}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -105,13 +108,118 @@
     <ClCompile Include="gfx\SDL_draw.c">
       <Filter>gfx</Filter>
     </ClCompile>
+    <ClCompile Include="engine\alphatweener.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bitmaptext.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bitmaptextmultiline.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bitmaskemitter.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bundlable.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bundle.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\button.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\camera.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\emitter.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\game.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gizmo.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\group.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\highlighter.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\image.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\keys.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\movieclip.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ninepatch.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\noosascript.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\pathfinder.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\pixelparticle.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\postweener.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\program.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\scene.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\script.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shader.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\skinnedblock.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\smarttexture.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\texture.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\texturecache.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\texturefilm.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\tilemap.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\toucharea.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\touchscreen.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\tweener.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\util.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\visual.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
     <ClCompile Include="pd\actor.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\alchemypot.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\alphatweener.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\amuletscene.cpp">
@@ -147,15 +255,6 @@
     <ClCompile Include="pd\bestiary.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\bitmaptext.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\bitmaptextmultiline.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\bitmaskemitter.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\blob.cpp">
       <Filter>pd</Filter>
     </ClCompile>
@@ -180,22 +279,10 @@
     <ClCompile Include="pd\buffpoison.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\bundlable.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\bundle.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\burning.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\busyindicator.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\button.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\camera.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\cellemitter.cpp">
@@ -249,9 +336,6 @@
     <ClCompile Include="pd\elemental.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\emitter.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\emoicon.cpp">
       <Filter>pd</Filter>
     </ClCompile>
@@ -282,9 +366,6 @@
     <ClCompile Include="pd\food.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\game.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\gamelog.cpp">
       <Filter>pd</Filter>
     </ClCompile>
@@ -295,9 +376,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\generator.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\gizmo.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\glog.cpp">
@@ -316,9 +394,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\graph.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\group.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\halo.cpp">
@@ -345,9 +420,6 @@
     <ClCompile Include="pd\highlightedtext.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\highlighter.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\iceblock.cpp">
       <Filter>pd</Filter>
     </ClCompile>
@@ -355,9 +427,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\icontitle.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\image.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\interlevelscene.cpp">
@@ -385,9 +454,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\key.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\keys.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\kindofweapon.cpp">
@@ -420,28 +486,13 @@
     <ClCompile Include="pd\monk.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\movieclip.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\ninepatch.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\noosascript.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\painter.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\pathfinder.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\picoPNG.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\pixeldungeon.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\pixelparticle.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\pixelscene.cpp">
@@ -453,16 +504,10 @@
     <ClCompile Include="pd\plantsprite.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\postweener.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\potion.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\preferences.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\program.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\pushing.cpp">
@@ -495,13 +540,7 @@
     <ClCompile Include="pd\room.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\scene.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\scorpio.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\script.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\scroll.cpp">
@@ -511,9 +550,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\sewerlevel.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\shader.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\shaman.cpp">
@@ -526,12 +562,6 @@
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\skeleton.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\skinnedblock.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\smarttexture.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\speck.cpp">
@@ -570,19 +600,7 @@
     <ClCompile Include="pd\tengu.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\texture.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\texturecache.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\texturefilm.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\thief.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\tilemap.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\timing.cpp">
@@ -600,22 +618,7 @@
     <ClCompile Include="pd\torchhalo.cpp">
       <Filter>pd</Filter>
     </ClCompile>
-    <ClCompile Include="pd\toucharea.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\touchscreen.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
     <ClCompile Include="pd\toxicgas.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\tweener.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\util.cpp">
-      <Filter>pd</Filter>
-    </ClCompile>
-    <ClCompile Include="pd\visual.cpp">
       <Filter>pd</Filter>
     </ClCompile>
     <ClCompile Include="pd\wand.cpp">
@@ -668,13 +671,139 @@
     <ClInclude Include="gfx\SDL_draw.h">
       <Filter>gfx</Filter>
     </ClInclude>
+    <ClInclude Include="engine\alphatweener.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\atlas.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bitmaptext.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bitmaptextmultiline.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bitmaskemitter.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bundlable.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bundle.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\button.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\callback.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\camera.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\colorblock.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\component.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\emitter.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\game.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gizmo.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\group.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\highlighter.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\image.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\keys.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\movieclip.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ninepatch.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\noosascript.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\pathfinder.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\pixelparticle.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\postweener.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\program.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\pseudopixel.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\resizable.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\scene.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\script.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shader.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\signal.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\skinnedblock.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\smarttexture.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\texture.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\texturecache.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\texturefilm.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\tilemap.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\toucharea.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\touchscreen.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\tweener.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\util.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\visual.h">
+      <Filter>engine</Filter>
+    </ClInclude>
     <ClInclude Include="pd\actor.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\alchemypot.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\alphatweener.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\amuletscene.h">
@@ -684,9 +813,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\armor.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\atlas.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\attackindicator.h">
@@ -719,15 +845,6 @@
     <ClInclude Include="pd\bestiary.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\bitmaptext.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\bitmaptextmultiline.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\bitmaskemitter.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\blob.h">
       <Filter>pd</Filter>
     </ClInclude>
@@ -752,25 +869,10 @@
     <ClInclude Include="pd\buffpoison.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\bundlable.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\bundle.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\burning.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\busyindicator.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\button.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\callback.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\camera.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\cellemitter.h">
@@ -794,13 +896,7 @@
     <ClInclude Include="pd\checkedcell.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\colorblock.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\compass.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\component.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\crab.h">
@@ -828,9 +924,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\elemental.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\emitter.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\emoicon.h">
@@ -863,9 +956,6 @@
     <ClInclude Include="pd\food.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\game.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\gamelog.h">
       <Filter>pd</Filter>
     </ClInclude>
@@ -876,9 +966,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\generator.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\gizmo.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\glog.h">
@@ -897,9 +984,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\graph.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\group.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\halo.h">
@@ -932,9 +1016,6 @@
     <ClInclude Include="pd\highlightedtext.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\highlighter.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\iceblock.h">
       <Filter>pd</Filter>
     </ClInclude>
@@ -942,9 +1023,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\icontitle.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\image.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\interlevelscene.h">
@@ -972,9 +1050,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\key.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\keys.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\kindofweapon.h">
@@ -1007,28 +1082,13 @@
     <ClInclude Include="pd\monk.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\movieclip.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\ninepatch.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\noosascript.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\painter.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\pathfinder.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\picoPNG.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\pixeldungeon.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\pixelparticle.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\pixelscene.h">
@@ -1040,19 +1100,10 @@
     <ClInclude Include="pd\plantsprite.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\postweener.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\potion.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\preferences.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\program.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\pseudopixel.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\pushing.h">
@@ -1073,9 +1124,6 @@
     <ClInclude Include="pd\regularlevel.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\resizable.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\resumebutton.h">
       <Filter>pd</Filter>
     </ClInclude>
@@ -1088,13 +1136,7 @@
     <ClInclude Include="pd\room.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\scene.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\scorpio.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\script.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\scroll.h">
@@ -1106,16 +1148,10 @@
     <ClInclude Include="pd\sewerlevel.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\shader.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\shadowbox.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\shaman.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\signal.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\simplebutton.h">
@@ -1125,12 +1161,6 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\skeleton.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\skinnedblock.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\smarttexture.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\speck.h">
@@ -1175,19 +1205,7 @@
     <ClInclude Include="pd\terrain.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\texture.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\texturecache.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\texturefilm.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\thief.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\tilemap.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\timing.h">
@@ -1205,25 +1223,10 @@
     <ClInclude Include="pd\torchhalo.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\toucharea.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\touchscreen.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\toxicgas.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\tweener.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\typedefine.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\util.h">
-      <Filter>pd</Filter>
-    </ClInclude>
-    <ClInclude Include="pd\visual.h">
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="pd\wand.h">

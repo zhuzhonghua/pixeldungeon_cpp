@@ -16,6 +16,9 @@ public:
 	}
 
 	static Script* get(const std::string& c);
+
+	static void reset();
+	virtual void unuse() {}
 protected:
 	static std::map<std::string, Script*> _all;
 	static Script* _curScript;
