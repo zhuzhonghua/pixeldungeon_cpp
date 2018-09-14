@@ -91,12 +91,12 @@ void NoosaScript::lighting(float rm, float gm, float bm, float am, float ra, flo
 
 NoosaScript* NoosaScript::get()
 {
-	Script* sc = Script::get("NoosaScript");
-	if (sc == NULL)
-	{
-		Script::_all.insert(std::make_pair("NoosaScript", new NoosaScript()));
-		return dynamic_cast<NoosaScript*>(Script::get("NoosaScript"));
-	}
+	Script* sc = Script::get<NoosaScript>();
+	//if (sc == NULL)
+	//{
+	//	Script::_all.insert(std::make_pair("NoosaScript", new NoosaScript()));
+	//	return dynamic_cast<NoosaScript*>(Script::get("NoosaScript"));
+	//}
 
 	return dynamic_cast<NoosaScript*>(sc);
 }
