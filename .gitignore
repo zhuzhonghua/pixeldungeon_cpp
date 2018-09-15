@@ -5,3 +5,8 @@ obj
 *.suo
 *.user
 *.opensdf
+*.exe
+*.exp
+*.ilk
+*.pdb
+*.lib

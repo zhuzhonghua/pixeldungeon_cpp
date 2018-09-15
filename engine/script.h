@@ -19,8 +19,7 @@ public:
 	template<class T>
 	static Script* get()
 	{
-		static const T c;
-		static const std::string name = typeid(c).name();
+		static const std::string name = typeid(T).name();
 		if (name.compare(_curScriptClass) != 0)
 		{
 			Script* script = NULL;
