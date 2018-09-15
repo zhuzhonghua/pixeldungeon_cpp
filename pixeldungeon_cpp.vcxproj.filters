@@ -666,6 +666,9 @@
     <ClCompile Include="pd\yog.cpp">
       <Filter>pd</Filter>
     </ClCompile>
+    <ClCompile Include="engine\atlas.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gfx\SDL_draw.h">

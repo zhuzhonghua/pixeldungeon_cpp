@@ -99,7 +99,7 @@ bool TextureCache::contains(const std::string& key)
 	return inst()->_texMap.find(key) != inst()->_texMap.end();
 }
 
-void TextureCache::add(const std::string& key, SmartTexture* tx)
-{
-	inst()->_texMap.insert(std::make_pair(key, tx));
-}
+//void TextureCache::add(const std::string& key, SmartTexture* tx)
+//{
+//	inst()->_texMap.insert(std::make_pair(key, tx));
+//}

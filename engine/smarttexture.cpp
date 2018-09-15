@@ -60,5 +60,5 @@ Gradient::Gradient(std::vector<int> colors)
 	filter(LINEAR, LINEAR);
 	wrap(CLAMP, CLAMP);
 
-	TextureCache::add("Gradient", this);
+	TextureCache::add<Gradient>(this);
 }

@@ -2,6 +2,8 @@
 
 #include "texture.h"
 
+class Atlas;
+
 class SmartTexture :public Texture{
 public:
 	std::string bitmaps;
@@ -11,6 +13,8 @@ public:
 
 	int wModeH;
 	int wModeV;
+
+	Atlas* atlas;
 
 	SmartTexture(SDL_Surface* img);
 	SmartTexture(const std::string& bitmap);

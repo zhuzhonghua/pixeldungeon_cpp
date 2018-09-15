@@ -3,7 +3,7 @@
 #include "texturecache.h"
 #include "util.h"
 
-const std::string Halo::CACHE_KEY = "Halo";
+const std::string Halo::CACHE_KEY = typeid(Halo).name();
 
 Halo::Halo()
 {
@@ -28,7 +28,8 @@ Halo::Halo()
 		SDL_Surface* img = SDL_CreateRGBSurface(0, RADIUS * 2, RADIUS * 2, 32, rmask, gmask, bmask, amask);
 		Draw_Circle(img, RADIUS, RADIUS, RADIUS * 0.75f, 0xFFFFFFFF);
 		Draw_Circle(img, RADIUS, RADIUS, RADIUS, 0x88FFFFFF);
-		TextureCache::add(CACHE_KEY, new SmartTexture(img));
+		//TextureCache::add<>(CACHE_KEY, new SmartTexture(img));
+		TextureCache::add<Halo>(new SmartTexture(img));
 	}
 
 	texture(CACHE_KEY);

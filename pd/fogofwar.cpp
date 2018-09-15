@@ -81,7 +81,7 @@ FogOfWar::FogTexture::FogTexture(FogOfWar* fowp)
 fow(fowp)
 {
 	filter(Texture::LINEAR, Texture::LINEAR);
-	TextureCache::add("FogOfWar", this);
+	TextureCache::add<FogOfWar>(this);
 }
 
 //void FogOfWar::FogTexture::reload()

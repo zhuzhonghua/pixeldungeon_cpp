@@ -19,7 +19,17 @@ public:
 	static SDL_Surface* createSurface(int w, int h,int argb);
 
 	static bool contains(const std::string& key);
-	static void add(const std::string& key, SmartTexture* tx);
+
+	template<class T>
+	static void add(SmartTexture* tx)
+	{
+		inst()->_texMap.insert(std::make_pair(typeid(T).name(), tx));
+	}
+
+	static void add(const std::string& key, SmartTexture* tx)
+	{
+		inst()->_texMap.insert(std::make_pair(key, tx));
+	}
 private:
 	std::map<std::string, SmartTexture*> _texMap;
 };

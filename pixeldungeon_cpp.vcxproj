@@ -73,6 +73,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="engine\alphatweener.cpp" />
+    <ClCompile Include="engine\atlas.cpp" />
     <ClCompile Include="engine\bitmaptext.cpp" />
     <ClCompile Include="engine\bitmaptextmultiline.cpp" />
     <ClCompile Include="engine\bitmaskemitter.cpp" />
