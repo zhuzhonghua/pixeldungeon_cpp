@@ -6,6 +6,9 @@ class FloatBuffer;
 
 class Quad{
 public:
+	// 0---1
+	// | \ |
+	// 3---2
 	static const int SIZE = 6;
 
 	static std::vector<short>* getIndices(int size);

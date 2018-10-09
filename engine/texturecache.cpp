@@ -69,7 +69,7 @@ SmartTexture* TextureCache::createSolid(int color)
 		SmartTexture* tex = new SmartTexture(img);
 		tc->_texMap.insert(std::make_pair(tmp, tex));
 
-		SDL_FreeSurface(img);
+		//SDL_FreeSurface(img);
 
 		return tex;
 	}
