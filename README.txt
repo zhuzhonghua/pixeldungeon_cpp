@@ -24,3 +24,6 @@ TODO:
 1.rewrite left code(especially gamescene related code).
 2.embed lua to this project to extend other features
 3.port to other platform(mac, linux, android, ios)
+
+Update
+add new triangle test project
