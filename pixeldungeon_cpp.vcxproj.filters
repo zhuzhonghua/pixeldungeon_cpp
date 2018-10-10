@@ -1187,9 +1187,6 @@
     <ClInclude Include="pd\statuspane.h">
       <Filter>pd</Filter>
     </ClInclude>
-    <ClInclude Include="pd\stdafx.h">
-      <Filter>pd</Filter>
-    </ClInclude>
     <ClInclude Include="pd\succubus.h">
       <Filter>pd</Filter>
     </ClInclude>
@@ -1279,6 +1276,9 @@
     </ClInclude>
     <ClInclude Include="pd\yog.h">
       <Filter>pd</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\stdafx.h">
+      <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

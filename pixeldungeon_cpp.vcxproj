@@ -322,6 +322,7 @@
     <ClInclude Include="engine\signal.h" />
     <ClInclude Include="engine\skinnedblock.h" />
     <ClInclude Include="engine\smarttexture.h" />
+    <ClInclude Include="engine\stdafx.h" />
     <ClInclude Include="engine\texture.h" />
     <ClInclude Include="engine\texturecache.h" />
     <ClInclude Include="engine\texturefilm.h" />
@@ -460,7 +461,6 @@
     <ClInclude Include="pd\startscene.h" />
     <ClInclude Include="pd\statistics.h" />
     <ClInclude Include="pd\statuspane.h" />
-    <ClInclude Include="pd\stdafx.h" />
     <ClInclude Include="pd\succubus.h" />
     <ClInclude Include="pd\surfacescene.h" />
     <ClInclude Include="pd\swarm.h" />
