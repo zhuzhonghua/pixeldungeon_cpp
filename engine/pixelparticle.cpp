@@ -52,12 +52,7 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			SparkParticle* sp = (SparkParticle*)emitter->recycle("SparkParticle");
-			if (sp == NULL)
-			{
-				sp = new SparkParticle();
-				emitter->add(sp);
-			}
+			SparkParticle* sp = (SparkParticle*)emitter->recycle<SparkParticle>();
 			sp->reset(x, y);
 		}
 
@@ -69,8 +64,6 @@ Emitter::Factory* SparkParticle::FACTORY = new FactoryNew();
 
 SparkParticle::SparkParticle()
 {
-	tag = "SparkParticle";
-
 	size(2);
 
 	GameMath::PointFSet(&acc, 0, +50);
@@ -101,12 +94,7 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			ElmoParticle* ep = (ElmoParticle*)emitter->recycle("ElmoParticle");
-			if (ep == NULL)
-			{
-				ep = new ElmoParticle();
-				emitter->add(ep);
-			}
+			ElmoParticle* ep = (ElmoParticle*)emitter->recycle<ElmoParticle>();
 			ep->reset(x, y);
 		}
 		virtual bool lightMode() {
@@ -118,7 +106,6 @@ Emitter::Factory* ElmoParticle::FACTORY = new FactoryNewElmo();
 
 ElmoParticle::ElmoParticle()
 {
-	tag = "ElmoParticle";
 }
 
 void ElmoParticle::reset(float x, float y)
@@ -147,12 +134,7 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			ShadowParticle* ep = (ShadowParticle*)emitter->recycle("ShadowParticle");
-			if (ep == NULL)
-			{
-				ep = new ShadowParticle();
-				emitter->add(ep);
-			}
+			ShadowParticle* ep = (ShadowParticle*)emitter->recycle<ShadowParticle>();
 			ep->reset(x, y);
 		}
 	};
@@ -164,12 +146,7 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			ShadowParticle* ep = (ShadowParticle*)emitter->recycle("ShadowParticle");
-			if (ep == NULL)
-			{
-				ep = new ShadowParticle();
-				emitter->add(ep);
-			}
+			ShadowParticle* ep = (ShadowParticle*)emitter->recycle<ShadowParticle>();
 			ep->resetCurse(x, y);
 		}
 	};
@@ -181,12 +158,7 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			ShadowParticle* ep = (ShadowParticle*)emitter->recycle("ShadowParticle");
-			if (ep == NULL)
-			{
-				ep = new ShadowParticle();
-				emitter->add(ep);
-			}
+			ShadowParticle* ep = (ShadowParticle*)emitter->recycle<ShadowParticle>();
 			ep->resetUp(x, y);
 		}
 	};
@@ -195,7 +167,6 @@ Emitter::Factory* ShadowParticle::UP = new FactoryUp();
 
 ShadowParticle::ShadowParticle()
 {
-	tag = "ShadowParticle";
 }
 
 void ShadowParticle::reset(float x, float y)
@@ -250,8 +221,6 @@ void ShadowParticle::update()
 
 PoisonParticle::PoisonParticle()
 {
-	tag = "PoisonParticle";
-
 	_lifespan = 0.6f;
 
 	GameMath::PointFSet(&acc, 0, 30);
@@ -299,7 +268,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(pp, emitter, PoisonParticle);
+			PoisonParticle* pp = (PoisonParticle*)emitter->recycle<PoisonParticle>();
+			//RECYCLE2(pp, emitter, PoisonParticle);
 			pp->resetMissile(x, y);
 		}
 		virtual boolean lightMode() {
@@ -310,7 +280,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(pp, emitter, PoisonParticle);
+			PoisonParticle* pp = (PoisonParticle*)emitter->recycle<PoisonParticle>();
+			//RECYCLE2(pp, emitter, PoisonParticle);
 			pp->resetSplash(x, y);
 		}
 		virtual boolean lightMode() {
@@ -329,7 +300,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(p, emitter, LeafParticle);
+			LeafParticle* p = (LeafParticle*)emitter->recycle<LeafParticle>();
+			//RECYCLE2(p, emitter, LeafParticle);
 			p->color(ColorMath::random(0x004400, 0x88CC44));
 			p->reset(x, y);
 		}
@@ -338,7 +310,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(p, emitter, LeafParticle);
+			LeafParticle* p = (LeafParticle*)emitter->recycle<LeafParticle>();
+			//RECYCLE2(p, emitter, LeafParticle);
 			p->color(ColorMath::random(Dungeon::level->color1, Dungeon::level->color2));
 			p->reset(x, y);
 		}
@@ -373,12 +346,13 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(p, emitter, SnowParticle);
+			SnowParticle* p = (SnowParticle*)emitter->recycle<SnowParticle>();
+			//RECYCLE2(p, emitter, SnowParticle);
 			p->reset(x, y);
 		}
 	};
 }
-Emitter::Factory* SnowParticle::FACTORY;
+Emitter::Factory* SnowParticle::FACTORY = new SnowParticleFactory();
 
 SnowParticle::SnowParticle()
 {
@@ -409,7 +383,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(p, emitter, ShaftParticle);
+			ShaftParticle* p = (ShaftParticle*)emitter->recycle<ShaftParticle>();
+			//RECYCLE2(p, emitter, ShaftParticle);
 			p->reset(x, y);
 		}
 		virtual boolean lightMode() {
@@ -452,12 +427,13 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(p, emitter, EarthParticle);
+			EarthParticle* p = (EarthParticle*)emitter->recycle<EarthParticle>();
+			//RECYCLE2(p, emitter, EarthParticle);
 			p->reset(x, y);
 		}
 	};
 }
-Emitter::Factory* EarthParticle::FACTORY;
+Emitter::Factory* EarthParticle::FACTORY = new EarthParticleFactory();
 EarthParticle::EarthParticle()
 {
 	color(ColorMath::random(0x444444, 0x777766));
@@ -486,7 +462,6 @@ void EarthParticle::update()
 
 BlastParticle::BlastParticle()
 {
-	tag = "BlastParticle";
 	color(0xEE7722);
 	//acc.set(0, +50);
 	GameMath::PointFSet(&acc, 0, +50);
@@ -511,7 +486,8 @@ namespace{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
-			RECYCLE2(bp, emitter, BlastParticle);
+			BlastParticle* bp = (BlastParticle*)emitter->recycle<BlastParticle>();
+			//RECYCLE2(bp, emitter, BlastParticle);
 			bp->reset(x, y);
 		}
 		virtual boolean lightMode() 

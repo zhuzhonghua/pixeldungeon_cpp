@@ -154,6 +154,7 @@ void BitmapText::text(const std::string& str)
 	_text = str;
 
 	// TODO: Rewrite,split line to single word
+	// dynamic input string
 	SDL_Surface* surface = TTF_RenderUTF8_Blended(_font, str.c_str(), c);
 
 	if (_texture == NULL)

@@ -19,7 +19,14 @@ public:
 	Gizmo* add(Gizmo* g);
 
 	Gizmo* recycle(const std::string& tag);
+	template<class T>
+	Gizmo* recycle()
+	{
+		Gizmo* g = getFirstAvailable(typeid(T).name());
+		if (g != NULL) return g;
 
+		return add(new T());
+	}
 	Gizmo* getFirstAvailable(const std::string& tag);
 
 	Gizmo* erase(Gizmo* g);

@@ -156,7 +156,8 @@ Gizmo* Group::getFirstAvailable(const std::string& tag)
 	for (int i = 0; i < _members.size(); i++)
 	{
 		Gizmo* g = _members[i];
-		if (g != NULL && !g->exists && g->tag.compare(tag) == 0) 
+		std::string name = typeid(*g).name();
+		if (g != NULL && !g->exists && name.compare(tag) == 0) 
 		{
 			return g;
 		}
