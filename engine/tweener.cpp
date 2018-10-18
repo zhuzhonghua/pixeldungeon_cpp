@@ -38,3 +38,16 @@ void ScaleTweener::updateValues(float progress)
 {	
 	visual->scale = GameMath::PointFInter(start, end, progress);
 }
+
+CameraScrollTweener::CameraScrollTweener(Camera* camera, PointF pos, float time)
+:Tweener(camera, time)
+{
+	this->camera = camera;
+	start = camera->scroll;
+	end = pos;
+}
+
+void CameraScrollTweener::updateValues(float progress)
+{
+	camera->scroll = GameMath::PointFInter(start, end, progress);
+}

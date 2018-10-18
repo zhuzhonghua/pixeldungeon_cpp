@@ -3,12 +3,12 @@
 
 float Button::longClick = 1.0f;
 
-TouchArea1::TouchArea1(Button* btn) :TouchArea(0,0,0,0)
+Button::TouchArea1::TouchArea1(Button* btn) :TouchArea(0, 0, 0, 0)
 {
 	_btn = btn;
 }
 
-void TouchArea1::onTouchDown(TouchScreen::Touch* touch)
+void Button::TouchArea1::onTouchDown(TouchScreen::Touch* touch)
 {
 	_btn->_pressed = true;
 	_btn->_pressTime = 0;
@@ -16,13 +16,13 @@ void TouchArea1::onTouchDown(TouchScreen::Touch* touch)
 	_btn->onTouchDown();
 }
 
-void TouchArea1::onTouchUp(TouchScreen::Touch* touch)
+void Button::TouchArea1::onTouchUp(TouchScreen::Touch* touch)
 {
 	_btn->_pressed = false;
 	_btn->onTouchUp();
 }
 
-void TouchArea1::onClick(TouchScreen::Touch* touch)
+void Button::TouchArea1::onClick(TouchScreen::Touch* touch)
 {
 	if (!_btn->_processed)
 	{

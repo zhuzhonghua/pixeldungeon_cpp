@@ -37,3 +37,24 @@ public:
 protected:
 	virtual void updateValues(float progress);
 };
+
+class CameraScrollTweener :public Tweener{
+public:
+	Camera* camera;
+
+	PointF start;
+	PointF end;
+
+	CameraScrollTweener(Camera* camera, PointF pos, float time);
+protected:
+	virtual void updateValues(float progress);
+};
+
+class Delayer:public Tweener {
+public:
+	Delayer() :Tweener(NULL, 0) {}
+	Delayer(float time):Tweener(NULL, time) {}
+
+protected:
+	virtual void updateValues(float progress) {}
+};

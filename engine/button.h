@@ -5,6 +5,10 @@
 
 class Button;
 namespace{
+	
+};
+
+class Button : public Component{
 	class TouchArea1 :public TouchArea{
 	public:
 		TouchArea1(Button* btn);
@@ -14,9 +18,6 @@ namespace{
 		virtual void onTouchUp(TouchScreen::Touch* touch);
 		virtual void onClick(TouchScreen::Touch* touch);
 	};
-};
-
-class Button : public Component{
 public:
 	static float longClick;
 
@@ -25,8 +26,6 @@ public:
 	virtual void update();
 protected:
 	TouchArea* hotArea;
-
-	friend class TouchArea1;
 
 	bool _pressed;
 	float _pressTime;
