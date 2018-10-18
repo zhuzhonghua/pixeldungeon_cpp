@@ -60,7 +60,7 @@ void SurfaceScene::init()
 		window->add(cloud);
 	}
 
-	int nPatches = (int)(sky->Width() / GrassPatch::WIDTH + 1);
+	int nPatches = (int)(sky->getWidth() / GrassPatch::WIDTH + 1);
 
 	for (int i = 0; i < nPatches * 4; i++) {
 		GrassPatch* patch = new GrassPatch((i - 0.75f) * GrassPatch::WIDTH / 4, SKY_HEIGHT + 1, dayTime);
@@ -216,7 +216,7 @@ SurfaceScene::Cloud::Cloud(float y, boolean dayTime)
 
 	GameMath::PointFSet(&scale, 1 - y / SKY_HEIGHT);
 //	scale.set(1 - y / SKY_HEIGHT);
-	x = Random::Float(SKY_WIDTH + Width()) - Width();
+	x = Random::Float(SKY_WIDTH + getWidth()) - getWidth();
 	speed.x = scale.x * (dayTime ? +8 : -8);
 
 	if (dayTime) {
@@ -232,9 +232,9 @@ void SurfaceScene::Cloud::update()
 {
 	Image::update();
 	if (speed.x > 0 && x > SKY_WIDTH) {
-		x = -Width();
+		x = -getWidth();
 	}
-	else if (speed.x < 0 && x < -Width()) {
+	else if (speed.x < 0 && x < -getWidth()) {
 		x = SKY_WIDTH;
 	}
 }

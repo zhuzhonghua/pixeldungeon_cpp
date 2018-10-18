@@ -83,15 +83,15 @@ void AmuletScene::init()
 
 	}
 	else {
-		height = amulet->height + LARGE_GAP + text->Height() + LARGE_GAP + btnExit->height() + SMALL_GAP + btnStay->height();
+		height = amulet->height + LARGE_GAP + text->getHeight() + LARGE_GAP + btnExit->height() + SMALL_GAP + btnStay->height();
 
 		amulet->x = align((Camera::mainCamera->width - amulet->width) / 2);
 		amulet->y = align((Camera::mainCamera->height - height) / 2);
 
-		text->x = align((Camera::mainCamera->width - text->Width()) / 2);
+		text->x = align((Camera::mainCamera->width - text->getWidth()) / 2);
 		text->y = amulet->y + amulet->height + LARGE_GAP;
 
-		btnExit->setPos((Camera::mainCamera->width - btnExit->width()) / 2, text->y + text->Height() + LARGE_GAP);
+		btnExit->setPos((Camera::mainCamera->width - btnExit->width()) / 2, text->y + text->getHeight() + LARGE_GAP);
 		btnStay->setPos(btnExit->left(), btnExit->bottom() + SMALL_GAP);
 	}
 

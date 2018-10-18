@@ -37,8 +37,8 @@ public:
 	Point point(Point p) { x = p.x, y = p.y; return p; }
 	PointF center() { return PointF(x + width / 2, y + height / 2); }
 	PointF center(PointF p) { x = p.x - width / 2; y = p.y - height / 2; return p; }
-	float Width() { return width*scale.x; }
-	float Height() { return height*scale.y; }
+	float getWidth() { return width*scale.x; }
+	float getHeight() { return height*scale.y; }
 	void alpha(float v) { am = v; aa = 0; }
 	float alpha() { return am + aa; }
 	void invert() { rm = gm = bm = -1.0f; ra = ga = ba = +1.0f; }

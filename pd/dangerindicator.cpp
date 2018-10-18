@@ -9,7 +9,7 @@
 
 void DangerIndicator::placeNumber()
 {
-	number->x = right() - 11 - number->Width();
+	number->x = right() - 11 - number->getWidth();
 	number->y = PixelScene::align(_y + (_height - number->baseLine()) / 2);
 }
 

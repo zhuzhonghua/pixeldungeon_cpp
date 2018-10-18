@@ -51,8 +51,8 @@ void HighlightedText::text(const std::string& value, int maxWidth)
 		highlighted->visible = false;
 	}
 
-	_width = normal->Width();
-	_height = normal->Height();
+	_width = normal->getWidth();
+	_height = normal->getHeight();
 }
 
 void HighlightedText::setColor(int n, int h)

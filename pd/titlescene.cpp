@@ -71,7 +71,7 @@ void TitleScene::init()
 	float height = title->height +
 		(PixelDungeon::landscape() ? DashboardItem_SIZE : DashboardItem_SIZE * 2);
 	
-	title->x = (w - title->Width()) / 2;
+	title->x = (w - title->getWidth()) / 2;
 	title->y = (h - height) / 2;
 	
 	placeTorch(title->x + 18, title->y + 20);
@@ -163,11 +163,11 @@ void DashboardItem::layout()
 {
 	Button::layout();
 
-	image->x = TitleScene::align(_x + (_width - image->Width()) / 2);
+	image->x = TitleScene::align(_x + (_width - image->getWidth()) / 2);
 	image->y = TitleScene::align(_y);
 
-	label->x = TitleScene::align(_x + (_width - label->Width()) / 2);
-	label->y = TitleScene::align(image->y + image->Height() + 2);
+	label->x = TitleScene::align(_x + (_width - label->getWidth()) / 2);
+	label->y = TitleScene::align(image->y + image->getHeight() + 2);
 }
 
 void DashboardItem::onTouchDown()

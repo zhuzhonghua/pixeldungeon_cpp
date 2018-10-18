@@ -13,8 +13,8 @@ WndChallenges::WndChallenges(int checked, bool editable)
 	BitmapText* title = PixelScene::createText(BPT::getText(TITLE), 9);
 	title->hardlight(TITLE_COLOR);
 	title->measure();
-	title->x = PixelScene::align(cameraf, (WIDTH - title->Width()) / 2);
-	title->y = PixelScene::align(cameraf, (TTL_HEIGHT - title->Height()) / 2);
+	title->x = PixelScene::align(cameraf, (WIDTH - title->getWidth()) / 2);
+	title->y = PixelScene::align(cameraf, (TTL_HEIGHT - title->getHeight()) / 2);
 	add(title);
 
 	float pos = TTL_HEIGHT;

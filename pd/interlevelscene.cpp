@@ -107,8 +107,8 @@ void InterlevelScene::init()
 
 	message = PixelScene::createText(BPT::getText(text), 9);
 	message->measure();
-	message->x = (Camera::mainCamera->width - message->Width()) / 2;
-	message->y = (Camera::mainCamera->height - message->Height()) / 2;
+	message->x = (Camera::mainCamera->width - message->getWidth()) / 2;
+	message->y = (Camera::mainCamera->height - message->getHeight()) / 2;
 	add(message);
 
 	phase = Phase::FADE_IN;

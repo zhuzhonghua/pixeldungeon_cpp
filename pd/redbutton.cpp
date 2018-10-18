@@ -32,13 +32,13 @@ void RedButton::layout()
 	_bg->y = _y;
 	_bg->size(_width, _height);
 
-	_text->x = _x + (int)(_width - _text->Width()) / 2;
+	_text->x = _x + (int)(_width - _text->getWidth()) / 2;
 	_text->y = _y + (int)(_height - _text->baseLine()) / 2;
 
 	if (_icon != NULL) 
 	{
-		_icon->x = _x + _text->x - _icon->Width() - 2;
-		_icon->y = _y + (_height - _icon->Height()) / 2;
+		_icon->x = _x + _text->x - _icon->getWidth() - 2;
+		_icon->y = _y + (_height - _icon->getHeight()) / 2;
 	}
 };
 
@@ -86,7 +86,7 @@ void RedButton::icon(Image* icon)
 
 float RedButton::reqWidth() 
 {
-	return _text->Width() + 4;
+	return _text->getWidth() + 4;
 }
 
 float RedButton::reqHeight() 

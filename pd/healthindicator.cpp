@@ -115,6 +115,6 @@ void GoldIndicator::createChildren()
 
 void GoldIndicator::layout()
 {
-	tf->x = _x + (_width - tf->Width()) / 2;
-	tf->y = bottom() - tf->Height();
+	tf->x = _x + (_width - tf->getWidth()) / 2;
+	tf->y = bottom() - tf->getHeight();
 }

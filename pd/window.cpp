@@ -92,7 +92,7 @@ Window::Window(int width, int height, NinePatch* chrome)
 	shadow->boxRect(
 		cameraf->x / cameraf->zoomf,
 		cameraf->y / cameraf->zoomf,
-		chrome->Width(), chrome->height);
+		chrome->getWidth(), chrome->height);
 
 	Keys::event.add(this);
 }
@@ -110,7 +110,7 @@ void Window::resize(int w, int h)
 	cameraf->x = (int)(Game::width - cameraf->screenWidth()) / 2;
 	cameraf->y = (int)(Game::height - cameraf->screenHeight()) / 2;
 
-	shadow->boxRect(cameraf->x / cameraf->zoomf, cameraf->y / cameraf->zoomf, chrome->Width(), chrome->height);
+	shadow->boxRect(cameraf->x / cameraf->zoomf, cameraf->y / cameraf->zoomf, chrome->getWidth(), chrome->height);
 }
 
 void Window::destroy()
@@ -189,7 +189,7 @@ WndInfoCell::WndInfoCell(int cell)
 	info->x = titlebar->left();
 	info->y = titlebar->bottom() + GAP;
 
-	resize(WIDTH, (int)(info->y + info->Height()));
+	resize(WIDTH, (int)(info->y + info->getHeight()));
 }
 
 const String WndJournal::TXT_TITLE = "Journal";
@@ -201,7 +201,7 @@ WndJournal::WndJournal()
 	txtTitle = PixelScene::createText(TXT_TITLE, 9);
 	txtTitle->hardlight(Window::TITLE_COLOR);
 	txtTitle->measure();
-	txtTitle->x = PixelScene::align(PixelScene::uiCamera, (WIDTH - txtTitle->Width()) / 2);
+	txtTitle->x = PixelScene::align(PixelScene::uiCamera, (WIDTH - txtTitle->getWidth()) / 2);
 	add(txtTitle);
 
 	Component* content = new Component();
@@ -223,7 +223,7 @@ WndJournal::WndJournal()
 	list = new ScrollPane(content);
 	add(list);
 
-	list->setRect(0, txtTitle->Height(), WIDTH, height - txtTitle->Height());
+	list->setRect(0, txtTitle->getHeight(), WIDTH, height - txtTitle->getHeight());
 }
 
 WndJournal::ListItem::ListItem( Journal::Feature f, int d)
@@ -261,8 +261,8 @@ void WndJournal::ListItem::layout()
 {
 	icon->x = _width - icon->width;
 
-	depth->x = icon->x - 1 - depth->Width();
-	depth->y = PixelScene::align(_y + (_height - depth->Height()) / 2);
+	depth->x = icon->x - 1 - depth->getWidth();
+	depth->y = PixelScene::align(_y + (_height - depth->getHeight()) / 2);
 
 	icon->y = depth->y - 1;
 
@@ -310,7 +310,7 @@ void WndInfoItem::fillFields(int image, ItemSprite::Glowing* glowing, int titleC
 	txtInfo->y = titlebar->bottom() + GAP;
 	add(txtInfo);
 
-	resize(WIDTH, (int)(txtInfo->y + txtInfo->Height()));
+	resize(WIDTH, (int)(txtInfo->y + txtInfo->getHeight()));
 }
 
 WndInfoItem::WndInfoItem(Heap* heap)
@@ -421,7 +421,7 @@ float WndTradeItem::createDescription(Item* item, boolean forSale)
 	info->y = titlebar->bottom() + GAP;
 	add(info);
 	
-	return info->y + info->Height();
+	return info->y + info->getHeight();
 }
 
 void WndTradeItem::sell(Item* item)

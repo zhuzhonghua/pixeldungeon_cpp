@@ -40,10 +40,10 @@ WndOptions::WndOptions(const std::string& title, const std::string& message, con
 	tfMesage->maxWidth = WIDTH - MARGIN * 2;
 	tfMesage->measure();
 	tfMesage->x = MARGIN;
-	tfMesage->y = tfTitle->y + tfTitle->Height() + MARGIN;
+	tfMesage->y = tfTitle->y + tfTitle->getHeight() + MARGIN;
 	add(tfMesage);
 
-	float pos = tfMesage->y + tfMesage->Height() + MARGIN;
+	float pos = tfMesage->y + tfMesage->getHeight() + MARGIN;
 
 	for (int i = 0; i < options.size(); i++) 
 	{

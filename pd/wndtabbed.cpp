@@ -71,7 +71,7 @@ void WndTabbed::LabeledTab::layout()
 {
 	Tab::layout();
 
-	btLabel->x = PixelScene::align(_x + (_width - btLabel->Width()) / 2);
+	btLabel->x = PixelScene::align(_x + (_width - btLabel->getWidth()) / 2);
 	btLabel->y = PixelScene::align(_y + (_height - btLabel->baseLine()) / 2) - 1;
 	if (!selected) 
 	{
@@ -106,7 +106,7 @@ void WndTabbed::resize(int w, int h)
 	shadow->boxRect(
 		cameraf->x / cameraf->zoomf,
 		cameraf->y / cameraf->zoomf,
-		chrome->Width(), chrome->height);
+		chrome->getWidth(), chrome->height);
 
 	for (int i = 0; i < tabs.size();i++)
 	{
@@ -251,7 +251,7 @@ WndHero::StatsTab::StatsTab(WndHero* w)
 
 	RedButton* btnCatalogus = new RedButtonCatalogus(wh, TXT_CATALOGUS);
 
-	btnCatalogus->setRect(0, title->y + title->Height(), btnCatalogus->reqWidth() + 2, btnCatalogus->reqHeight() + 2);
+	btnCatalogus->setRect(0, title->y + title->getHeight(), btnCatalogus->reqWidth() + 2, btnCatalogus->reqHeight() + 2);
 	add(btnCatalogus);
 
 	RedButton* btnJournal = new RedButtonJournal(wh, TXT_JOURNAL);
@@ -316,7 +316,7 @@ void WndCatalogus::updateList()
 {
 	txtTitle->text(GameMath::format(TXT_TITLE.c_str(), showPotions ? TXT_POTIONS.c_str() : TXT_SCROLLS.c_str()));
 	txtTitle->measure();
-	txtTitle->x = PixelScene::align(PixelScene::uiCamera, (width - txtTitle->Width()) / 2);
+	txtTitle->x = PixelScene::align(PixelScene::uiCamera, (width - txtTitle->getWidth()) / 2);
 
 	for (ArrayList<ListItem*>::iterator itr = items.begin();
 		itr != items.end(); itr++)
@@ -424,7 +424,7 @@ WndCatalogus::WndCatalogus()
 
 	list = new ScrollPane(new ComponentNew(this));
 	Window::add(list);
-	list->setRect(0, txtTitle->Height(), width, height - txtTitle->Height());
+	list->setRect(0, txtTitle->getHeight(), width, height - txtTitle->getHeight());
 
 	boolean showPotions = WndCatalogus::showPotions;
 	std::vector<Tab*> tabs;

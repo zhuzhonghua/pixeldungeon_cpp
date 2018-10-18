@@ -154,7 +154,7 @@ bool Visual::isVisible()
 	Camera* c = camera();
 	float cx = c->scroll.x;
 	float cy = c->scroll.y;
-	float w = Width();
-	float h = Height();
+	float w = getWidth();
+	float h = getHeight();
 	return x + w >= cx && y + h >= cy && x < cx + c->width && y < cy + c->height;
 }

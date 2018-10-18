@@ -12,6 +12,6 @@ WndMessage::WndMessage(const std::string& text)
 	add(info);
 
 	resize(
-		(int)info->Width() + MARGIN * 2,
-		(int)info->Height() + MARGIN * 2);
+		(int)info->getWidth() + MARGIN * 2,
+		(int)info->getHeight() + MARGIN * 2);
 }

@@ -78,8 +78,8 @@ void AttackIndicator::updateImage()
 	sprite->paused = true;
 	add(sprite);
 
-	sprite->x = _x + (_width - sprite->Width()) / 2 + 1;
-	sprite->y = _y + (_height - sprite->Height()) / 2;
+	sprite->x = _x + (_width - sprite->getWidth()) / 2 + 1;
+	sprite->y = _y + (_height - sprite->getHeight()) / 2;
 	PixelScene::align(sprite);
 }
 
@@ -152,8 +152,8 @@ void AttackIndicator::layout()
 
 	if (sprite != NULL) 
 	{
-		sprite->x = _x + (_width - sprite->Width()) / 2;
-		sprite->y = _y + (_height - sprite->Height()) / 2;
+		sprite->x = _x + (_width - sprite->getWidth()) / 2;
+		sprite->y = _y + (_height - sprite->getHeight()) / 2;
 		PixelScene::align(sprite);
 	}
 }

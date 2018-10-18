@@ -26,11 +26,11 @@ void Toast::layout()
 	bg->size(_width, _height);
 
 	close->setPos(
-		bg->x + bg->Width() - bg->marginHor() / 2 - MARGIN_HOR - close->width(),
+		bg->x + bg->getWidth() - bg->marginHor() / 2 - MARGIN_HOR - close->width(),
 		_y + (_height - close->height()) / 2);
 
-	text->x = close->left() - MARGIN_HOR - text->Width();
-	text->y = _y + (_height - text->Height()) / 2;
+	text->x = close->left() - MARGIN_HOR - text->getWidth();
+	text->y = _y + (_height - text->getHeight()) / 2;
 	PixelScene::align(text);
 }
 
@@ -40,8 +40,8 @@ Toast::Toast(const std::string& t)
 
 	Text(t);
 
-	_width = text->Width() + close->width() + bg->marginHor() + MARGIN_HOR * 3;
-	_height = std::max(text->Height(), close->height()) + bg->marginVer() + MARGIN_VER * 2;
+	_width = text->getWidth() + close->width() + bg->marginHor() + MARGIN_HOR * 3;
+	_height = std::max(text->getHeight(), close->height()) + bg->marginVer() + MARGIN_VER * 2;
 }
 
 void Toast::Text(const std::string& txt)

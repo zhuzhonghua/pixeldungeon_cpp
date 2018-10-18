@@ -27,8 +27,8 @@ WndBag::WndBag(Bag* bag, Listener* listener, Mode mode, const std::string& title
 	BitmapText* txtTitle = PixelScene::createText(title.size() > 0 ? title : bag->Name(), 9);
 	txtTitle->hardlight(TITLE_COLOR);
 	txtTitle->measure();
-	txtTitle->x = (int)(slotsWidth - txtTitle->Width()) / 2;
-	txtTitle->y = (int)(TITLE_HEIGHT - txtTitle->Height()) / 2;
+	txtTitle->x = (int)(slotsWidth - txtTitle->getWidth()) / 2;
+	txtTitle->y = (int)(TITLE_HEIGHT - txtTitle->getHeight()) / 2;
 	Group::add(txtTitle);
 
 	placeItems(bag);

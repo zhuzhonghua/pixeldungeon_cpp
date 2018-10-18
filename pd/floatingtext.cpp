@@ -28,9 +28,9 @@ void FloatingText::push(FloatingText* txt, int key)
 		while (aboveIndex >= 0) 
 		{
 			FloatingText* above = stack[aboveIndex];
-			if (above->y + above->Height() > below->y) 
+			if (above->y + above->getHeight() > below->y) 
 			{
-				above->y = below->y - above->Height();
+				above->y = below->y - above->getHeight();
 
 				below = above;
 				aboveIndex--;
@@ -118,8 +118,8 @@ void FloatingText::reset(float x, float y, const std::string& text, int color)
 	hardlight(color);
 
 	measure();
-	this->x = PixelScene::align(x - Width() / 2);
-	this->y = y - Height();
+	this->x = PixelScene::align(x - getWidth() / 2);
+	this->y = y - getHeight();
 
 	timeLeft = LIFESPAN;
 }

@@ -127,7 +127,7 @@ void StatusPane::layout()
 	hp->x = 30;
 	hp->y = 3;
 
-	depth->x = _width - 24 - depth->Width() - 18;
+	depth->x = _width - 24 - depth->getWidth() - 18;
 	depth->y = 6;
 
 	keys->y = 6;
@@ -202,7 +202,7 @@ void StatusPane::update()
 		lastLvl = Dungeon::hero->lvl;
 		level->text(GameMath::format("%d", lastLvl));
 		level->measure();
-		level->x = PixelScene::align(27.5f - level->Width() / 2);
+		level->x = PixelScene::align(27.5f - level->getWidth() / 2);
 		level->y = PixelScene::align(28.0f - level->baseLine() / 2);
 	}
 

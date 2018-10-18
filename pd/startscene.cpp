@@ -114,10 +114,10 @@ void StartScene::GameButton::layout()
 
 	if (_secondary->text().length() > 0) 
 	{
-		_text->y = align(_y + (_height - _text->Height() - _secondary->baseLine()) / 2);
+		_text->y = align(_y + (_height - _text->getHeight() - _secondary->baseLine()) / 2);
 
-		_secondary->x = align(_x + (_width - _secondary->Width()) / 2);
-		_secondary->y = align(_text->y + _text->Height());
+		_secondary->x = align(_x + (_width - _secondary->getWidth()) / 2);
+		_secondary->y = align(_text->y + _text->getHeight());
 	}
 	else 
 	{
@@ -184,11 +184,11 @@ void StartScene::ClassShield::layout()
 {
 	Button::layout();
 
-	avatar->x = align(_x + (_width - avatar->Width()) / 2);
-	avatar->y = align(_y + (_height - avatar->Height() - name->Height()) / 2);
+	avatar->x = align(_x + (_width - avatar->getWidth()) / 2);
+	avatar->y = align(_y + (_height - avatar->getHeight() - name->getHeight()) / 2);
 
-	name->x = align(_x + (_width - name->Width()) / 2);
-	name->y = avatar->y + avatar->Height() + SCALE;
+	name->x = align(_x + (_width - name->getWidth()) / 2);
+	name->y = avatar->y + avatar->getHeight() + SCALE;
 }
 
 void StartScene::ClassShield::onTouchDown()
@@ -350,7 +350,7 @@ void StartScene::init()
 	add(archs);
 	
 	Image* title = BannerSprites::get(BannerSprites::Type::SELECT_YOUR_HERO);
-	title->x = align((w - title->Width()) / 2);
+	title->x = align((w - title->getWidth()) / 2);
 	title->y = align(top);
 	add(title);
 	
@@ -362,7 +362,7 @@ void StartScene::init()
 	btnLoad = new LoadGameButton(BPT::getText(TXT_LOAD), this);
 	add(btnLoad);
 	
-	float centralHeight = buttonY - title->y - title->Height();
+	float centralHeight = buttonY - title->y - title->getHeight();
 
 	ClassShield::startScene = this;
 
@@ -405,7 +405,7 @@ void StartScene::init()
 	{
 		float shieldW = width / 2;
 		float shieldH = std::min(centralHeight / 2, shieldW * 1.2f);
-		top = title->y + title->Height() + centralHeight / 2 - shieldH;
+		top = title->y + title->getHeight() + centralHeight / 2 - shieldH;
 		for (int i = 0; i < CLASSES_LEN; i++) 
 		{
 			ClassShield* shield = shields.find(classes[i])->second;
@@ -431,7 +431,7 @@ void StartScene::init()
 		txt->maxWidth = (int)width;
 		txt->measure();
 		
-		float pos = (bottom - BUTTON_HEIGHT) + (BUTTON_HEIGHT - txt->Height()) / 2;
+		float pos = (bottom - BUTTON_HEIGHT) + (BUTTON_HEIGHT - txt->getHeight()) / 2;
 		BitmapTextMultiline::LineSplitter lineSpt(txt);
 
 		std::vector<BitmapText*> lines;
@@ -443,11 +443,11 @@ void StartScene::init()
 
 			line->measure();
 			line->hardlight(0xFFFF00);
-			line->x = PixelScene::align(w / 2 - line->Width() / 2);
+			line->x = PixelScene::align(w / 2 - line->getWidth() / 2);
 			line->y = PixelScene::align(pos);
 			unlock->add(line);
 		
-			pos += line->Height();
+			pos += line->getHeight();
 		}
 		delete txt;
 	}

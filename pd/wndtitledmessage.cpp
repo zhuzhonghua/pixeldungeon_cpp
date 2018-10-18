@@ -50,7 +50,7 @@ WndInfoMob::MobTitle::MobTitle(Mob* mob)
 void WndInfoMob::MobTitle::layout()
 {
 	image->x = 0;
-	image->y = std::max(0, (int)(name->Height() + GAP + health->height() - image->height));
+	image->y = std::max(0, (int)(name->getHeight() + GAP + health->height() - image->height));
 
 	name->x = image->width + GAP;
 	name->y = image->height - health->height() - GAP - name->baseLine();
@@ -60,7 +60,7 @@ void WndInfoMob::MobTitle::layout()
 	health->setRect(image->width + GAP, image->height - health->height(), w, health->height());
 
 	buffs->setPos(
-		name->x + name->Width() + GAP,
+		name->x + name->getWidth() + GAP,
 		name->y + name->baseLine() - BuffIndicator::SIZE);
 
 	_height = health->bottom();

@@ -163,12 +163,12 @@ void ItemSlot::layout()
 	}
 
 	if (topRight != NULL) {
-		topRight->x = _x + (_width - topRight->Width());
+		topRight->x = _x + (_width - topRight->getWidth());
 		topRight->y = _y;
 	}
 
 	if (bottomRight != NULL) {
-		bottomRight->x = _x + (_width - bottomRight->Width());
-		bottomRight->y = _y + (_height - bottomRight->Height());
+		bottomRight->x = _x + (_width - bottomRight->getWidth());
+		bottomRight->y = _y + (_height - bottomRight->getHeight());
 	}
 }

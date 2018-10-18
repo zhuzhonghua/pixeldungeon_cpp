@@ -50,7 +50,7 @@ WndClass::PerksTab::PerksTab(WndClass* wnd)
 		if (dotWidth == 0) 
 		{
 			dot->measure();
-			dotWidth = dot->Width();
+			dotWidth = dot->getWidth();
 		}
 		add(dot);
 
@@ -61,8 +61,8 @@ WndClass::PerksTab::PerksTab(WndClass* wnd)
 		item->measure();
 		add(item);
 
-		pos += item->Height();
-		float w = item->Width();
+		pos += item->getHeight();
+		float w = item->getWidth();
 		if (w > width) 
 		{
 			width = w;

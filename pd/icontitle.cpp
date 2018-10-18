@@ -44,22 +44,22 @@ void IconTitle::layout()
 	imIcon->x = _x;
 	imIcon->y = _y;
 
-	tfLabel->x = PixelScene::align(PixelScene::uiCamera, imIcon->x + imIcon->Width() + GAP);
+	tfLabel->x = PixelScene::align(PixelScene::uiCamera, imIcon->x + imIcon->getWidth() + GAP);
 	tfLabel->maxWidth = (int)(_width - tfLabel->x);
 	tfLabel->measure();
 	tfLabel->y = PixelScene::align(PixelScene::uiCamera,
-		imIcon->height > tfLabel->Height() ?
-		imIcon->y + (imIcon->Height() - tfLabel->baseLine()) / 2 :
+		imIcon->height > tfLabel->getHeight() ?
+		imIcon->y + (imIcon->getHeight() - tfLabel->baseLine()) / 2 :
 		imIcon->y);
 
 	if (health->visible) 
 	{
-		health->setRect(tfLabel->x, std::max(tfLabel->y + tfLabel->Height(), imIcon->y + imIcon->Height() - health->height()), tfLabel->maxWidth, 0);
+		health->setRect(tfLabel->x, std::max(tfLabel->y + tfLabel->getHeight(), imIcon->y + imIcon->getHeight() - health->height()), tfLabel->maxWidth, 0);
 		_height = health->bottom();
 	}
 	else 
 	{
-		_height = std::max(imIcon->y + imIcon->Height(), tfLabel->y + tfLabel->Height());
+		_height = std::max(imIcon->y + imIcon->getHeight(), tfLabel->y + tfLabel->getHeight());
 	}
 }
 

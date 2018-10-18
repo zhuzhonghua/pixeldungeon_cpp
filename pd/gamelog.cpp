@@ -112,7 +112,7 @@ void GameLog::layout()
 		entry->maxWidth = (int)width();
 		entry->measure();
 		entry->x = _x;
-		entry->y = pos - entry->Height();
-		pos -= entry->Height();
+		entry->y = pos - entry->getHeight();
+		pos -= entry->getHeight();
 	}
 }

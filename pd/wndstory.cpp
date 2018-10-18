@@ -58,7 +58,7 @@ WndStory::WndStory(const std::string& text)
 
 	add(new TouchAreaNew(this, chrome));
 
-	resize((int)(tf->Width() + MARGIN * 2), (int)std::min((int)tf->Height(), 180));
+	resize((int)(tf->getWidth() + MARGIN * 2), (int)std::min((int)tf->getHeight(), 180));
 }
 
 void WndStory::update()
