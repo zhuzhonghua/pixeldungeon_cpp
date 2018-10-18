@@ -87,7 +87,7 @@ void Heap::open(Hero* hero)
 		//for (Item item : items) {
 			if (item->cursed) {
 				if (Wraith::spawnAt(pos) == NULL) {
-					hero->sprite->emitter()->burst(ShadowParticle::CURSE, 6);
+					hero->sprite->emitter()->burst(ShadowParticle::curse(), 6);
 					hero->damage(hero->HP / 2, this->getClassName());
 				}
 				//Sample.INSTANCE.play(Assets.SND_CURSED);
@@ -364,7 +364,7 @@ Item* Heap::transmute()
 
 void Heap::burnFX(int pos)
 {
-	CellEmitter::get(pos)->burst(ElmoParticle::FACTORY, 6);
+	CellEmitter::get(pos)->burst(ElmoParticle::factory(), 6);
 	//Sample.INSTANCE.play(Assets.SND_BURNING);
 }
 

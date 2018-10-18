@@ -388,7 +388,7 @@ int AntiEntropy::proc(Armor* armor, Char* attacker, Char* defender, int damage)
 	if (Level::adjacent(attacker->pos, defender->pos) && Random::Int(level + 6) >= 5) {
 	
 		Buff::prolong(attacker, "Frost", Frost::duration(attacker) * Random::Float(1.0f, 1.5f));
-		CellEmitter::get(attacker->pos)->start(SnowParticle::FACTORY, 0.2f, 6);
+		CellEmitter::get(attacker->pos)->start(SnowParticle::factory(), 0.2f, 6);
 	
 		((Burning*)Buff::affect(defender, "Burning"))->reignite(defender);
 		defender->sprite->emitter()->burst(FlameParticle::FACTORY, 5);
@@ -679,7 +679,7 @@ int Entanglement::proc(Armor* armor, Char* attacker, Char* defender, int damage)
 	
 		Buff::prolong(defender, "Roots", 5 - level / 5);
 		((Earthroot::Armor*)Buff::affect(defender, "Armor"))->Level(5 * (level + 1));
-		CellEmitter::bottom(defender->pos)->start(EarthParticle::FACTORY, 0.05f, 8);
+		CellEmitter::bottom(defender->pos)->start(EarthParticle::factory(), 0.05f, 8);
 		Camera::mainCamera->shake(1, 0.4f);
 	
 	}

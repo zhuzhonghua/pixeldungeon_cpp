@@ -175,7 +175,7 @@ int Yog::RottingFist::attackProc(Char* enemy, int damage)
 bool Yog::RottingFist::act()
 {
 	if (Level::water[pos] && HP < HT) {
-		sprite->emitter()->burst(ShadowParticle::UP, 2);
+		sprite->emitter()->burst(ShadowParticle::up(), 2);
 		HP += REGENERATION;
 	}
 

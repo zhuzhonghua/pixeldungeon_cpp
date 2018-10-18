@@ -106,7 +106,7 @@ boolean Freezing::affect(int cell, BlobFire* fire)
 	}
 
 	if (Dungeon::visible[cell]) {
-		CellEmitter::get(cell)->start(SnowParticle::FACTORY, 0.2f, 6);
+		CellEmitter::get(cell)->start(SnowParticle::factory(), 0.2f, 6);
 		return true;
 	}
 	else {
@@ -176,7 +176,7 @@ void Sign::read(int pos)
 			GameScene::updateMap(pos);
 			GameScene::discoverTile(pos, Terrain::SIGN);
 
-			CellEmitter::get(pos)->burst(ElmoParticle::FACTORY, 6);
+			CellEmitter::get(pos)->burst(ElmoParticle::factory(), 6);
 			//Sample.INSTANCE.play(Assets.SND_BURNING);
 
 			GLog::w(TXT_BURN.c_str());

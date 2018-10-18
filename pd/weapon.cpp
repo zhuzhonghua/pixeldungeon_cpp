@@ -320,7 +320,7 @@ boolean Death::proc(Weapon* weapon, Char* attacker, Char* defender, int damage)
 
 	if (Random::Int(level + 100) >= 92) {
 		defender->damage(defender->HP, this->getClassName());
-		defender->sprite->emitter()->burst(ShadowParticle::UP, 5);
+		defender->sprite->emitter()->burst(ShadowParticle::up(), 5);
 
 		if (!defender->isAlive() && dynamic_cast<Hero*>(attacker)) {
 			Badges::validateGrimWeapon();
@@ -468,7 +468,7 @@ boolean Death::proc(Weapon* weapon, Char* attacker, Char* defender, int damage)
 	 affected.push_back(ch);
 	 ch->damage(Level::water[ch->pos] && !ch->flying ? (int)(damage * 2) : damage, "LIGHTNING");
 
-	 ch->sprite->centerEmitter()->burst(SparkParticle::FACTORY, 3);
+	 ch->sprite->centerEmitter()->burst(SparkParticle::factory(), 3);
 	 ch->sprite->flash();
 
 	 points[nPoints++] = ch->pos;

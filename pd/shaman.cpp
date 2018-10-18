@@ -37,7 +37,7 @@ bool Shaman::doAttack(Char* enemy)
 			}
 			//enemy->damage(dmg, LightningTrap.LIGHTNING);
 
-			enemy->sprite->centerEmitter()->burst(SparkParticle::FACTORY, 3);
+			enemy->sprite->centerEmitter()->burst(SparkParticle::factory(), 3);
 			enemy->sprite->flash();
 
 			if (enemy == Dungeon::hero) 

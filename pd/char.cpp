@@ -140,7 +140,7 @@ void Char::add(Buff* buff)
 	if (sprite != NULL) {
 		if (dynamic_cast<BuffPoison*>(buff)) {
 
-			CellEmitter::center(pos)->burst(PoisonParticle::SPLASH, 5);
+			CellEmitter::center(pos)->burst(PoisonParticle::splash(), 5);
 			sprite->showStatus(CharSprite::NEGATIVE, "poisoned");
 
 		}

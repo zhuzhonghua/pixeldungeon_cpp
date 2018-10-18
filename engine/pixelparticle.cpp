@@ -48,7 +48,7 @@ void Shrinking::update()
 }
 
 namespace{
-	class FactoryNew :public Emitter::Factory{
+	class SparkParticleFactory :public Emitter::Factory{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
@@ -60,7 +60,16 @@ namespace{
 	};
 }
 
-Emitter::Factory* SparkParticle::FACTORY = new FactoryNew();
+Emitter::Factory* SparkParticle::factory()
+{
+	if (FACTORY == NULL)
+	{
+		FACTORY = new SparkParticleFactory();
+	}
+	return FACTORY;
+}
+
+Emitter::Factory* SparkParticle::FACTORY;
 
 SparkParticle::SparkParticle()
 {
@@ -90,7 +99,7 @@ void SparkParticle::update()
 }
 
 namespace{
-	class FactoryNewElmo :public Emitter::Factory{
+	class ElmoParticleFactory :public Emitter::Factory{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
@@ -102,7 +111,17 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* ElmoParticle::FACTORY = new FactoryNewElmo();
+
+Emitter::Factory* ElmoParticle::factory()
+{
+	if (FACTORY == NULL)
+	{
+		FACTORY = new ElmoParticleFactory();
+	}
+	return FACTORY;
+}
+
+Emitter::Factory* ElmoParticle::FACTORY;
 
 ElmoParticle::ElmoParticle()
 {
@@ -130,7 +149,7 @@ void ElmoParticle::update()
 }
 
 namespace{
-	class FactoryMissile :public Emitter::Factory{
+	class ShadowParticleMissileFactory :public Emitter::Factory{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
@@ -138,11 +157,7 @@ namespace{
 			ep->reset(x, y);
 		}
 	};
-}
-Emitter::Factory* ShadowParticle::MISSILE = new FactoryMissile();
-
-namespace{
-	class FactoryCurse :public Emitter::Factory{
+	class ShadowParticleCurseFactory :public Emitter::Factory{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
@@ -150,11 +165,7 @@ namespace{
 			ep->resetCurse(x, y);
 		}
 	};
-}
-Emitter::Factory* ShadowParticle::CURSE = new FactoryCurse();
-
-namespace{
-	class FactoryUp :public Emitter::Factory{
+	class ShadowParticleUpFactory :public Emitter::Factory{
 	public:
 		virtual void emit(Emitter* emitter, int index, float x, float y)
 		{
@@ -163,7 +174,25 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* ShadowParticle::UP = new FactoryUp();
+Emitter::Factory* ShadowParticle::missile()
+{
+	if (MISSILE == NULL) MISSILE = new ShadowParticleMissileFactory();
+	return MISSILE;
+}
+Emitter::Factory* ShadowParticle::curse()
+{
+	if (CURSE == NULL) CURSE = new ShadowParticleCurseFactory();
+	return CURSE;
+}
+Emitter::Factory* ShadowParticle::up()
+{
+	if (UP == NULL) UP = new ShadowParticleUpFactory();
+	return UP;
+}
+
+Emitter::Factory* ShadowParticle::MISSILE;
+Emitter::Factory* ShadowParticle::CURSE;
+Emitter::Factory* ShadowParticle::UP;
 
 ShadowParticle::ShadowParticle()
 {
@@ -289,8 +318,20 @@ namespace{
 		};
 	};
 }
-Emitter::Factory* PoisonParticle::MISSILE = new PoisonParticleMissileFactory();
-Emitter::Factory* PoisonParticle::SPLASH = new PoisonParticleSplashFactory();
+
+Emitter::Factory* PoisonParticle::missile()
+{
+	if (MISSILE == NULL) MISSILE = new PoisonParticleMissileFactory();
+	return MISSILE;
+}
+Emitter::Factory* PoisonParticle::splash()
+{
+	if (SPLASH == NULL) SPLASH = new PoisonParticleSplashFactory();
+	return SPLASH;
+}
+
+Emitter::Factory* PoisonParticle::MISSILE;
+Emitter::Factory* PoisonParticle::SPLASH;
 
 int LeafParticle::color1;
 int LeafParticle::color2;
@@ -317,8 +358,20 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* LeafParticle::GENERAL = new LeafParticleGeneralFactory;
-Emitter::Factory* LeafParticle::LEVEL_SPECIFIC = new LeafParticleLevelSpecificFactory;
+
+Emitter::Factory* LeafParticle::general()
+{
+	if(GENERAL == NULL) GENERAL = new LeafParticleGeneralFactory;
+	return GENERAL;
+}
+Emitter::Factory* LeafParticle::levelSpecific()
+{
+	if (LEVEL_SPECIFIC == NULL) LEVEL_SPECIFIC = new LeafParticleLevelSpecificFactory();
+	return LEVEL_SPECIFIC;
+}
+
+Emitter::Factory* LeafParticle::GENERAL;
+Emitter::Factory* LeafParticle::LEVEL_SPECIFIC;
 
 LeafParticle::LeafParticle()
 {
@@ -352,7 +405,14 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* SnowParticle::FACTORY = new SnowParticleFactory();
+
+Emitter::Factory* SnowParticle::factory()
+{
+	if (FACTORY == NULL) FACTORY = new SnowParticleFactory();
+	return FACTORY;
+}
+
+Emitter::Factory* SnowParticle::FACTORY;
 
 SnowParticle::SnowParticle()
 {
@@ -392,7 +452,14 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* ShaftParticle::FACTORY = new ShaftParticleFactory;
+
+
+Emitter::Factory* ShaftParticle::factory()
+{
+	if (FACTORY == NULL) FACTORY = new ShaftParticleFactory();
+	return FACTORY;
+}
+Emitter::Factory* ShaftParticle::FACTORY;
 
 ShaftParticle::ShaftParticle()
 {
@@ -433,7 +500,14 @@ namespace{
 		}
 	};
 }
-Emitter::Factory* EarthParticle::FACTORY = new EarthParticleFactory();
+
+
+Emitter::Factory* EarthParticle::factory()
+{
+	if (FACTORY == NULL) FACTORY = new EarthParticleFactory();
+	return FACTORY;
+}
+Emitter::Factory* EarthParticle::FACTORY;
 EarthParticle::EarthParticle()
 {
 	color(ColorMath::random(0x444444, 0x777766));
@@ -496,4 +570,10 @@ namespace{
 		};
 	};
 }
-Emitter::Factory* BlastParticle::FACTORY = new BlastParticleFactory;
+
+Emitter::Factory* BlastParticle::factory()
+{
+	if (FACTORY == NULL) FACTORY = new BlastParticleFactory();
+	return FACTORY;
+}
+Emitter::Factory* BlastParticle::FACTORY;

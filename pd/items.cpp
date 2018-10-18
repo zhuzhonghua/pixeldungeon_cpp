@@ -38,7 +38,7 @@ void Bomb::onThrow(int cell)
 		//Sample.INSTANCE.play(Assets.SND_BLAST, 2);
 
 		if (Dungeon::visible[cell]) {
-			CellEmitter::center(cell)->burst(BlastParticle::FACTORY, 30);
+			CellEmitter::center(cell)->burst(BlastParticle::factory(), 30);
 		}
 
 		boolean terrainAffected = false;

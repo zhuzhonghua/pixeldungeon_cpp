@@ -597,7 +597,7 @@ void Shopkeeper::flee()
 	{
 		Heap* heap = *itr;
 		if (heap->type == Heap::Type::FOR_SALE) {
-			CellEmitter::get(heap->pos)->burst(ElmoParticle::FACTORY, 4);
+			CellEmitter::get(heap->pos)->burst(ElmoParticle::factory(), 4);
 			heap->destroy();
 		}
 	}
@@ -606,7 +606,7 @@ void Shopkeeper::flee()
 	delete sprite;
 	sprite = NULL;
 
-	CellEmitter::get(pos)->burst(ElmoParticle::FACTORY, 6);
+	CellEmitter::get(pos)->burst(ElmoParticle::factory(), 6);
 
 	destroy();
 }

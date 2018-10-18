@@ -41,7 +41,7 @@ void Plant::wither()
 	sprite->kill();
 	if (Dungeon::visible[pos]) 
 	{
-		CellEmitter::get(pos)->burst(LeafParticle::GENERAL, 6);
+		CellEmitter::get(pos)->burst(LeafParticle::general(), 6);
 	}
 
 	if (Dungeon::hero->subClass == HeroSubClass::WARDEN) 
@@ -212,7 +212,7 @@ void Sorrowmoss::activate(Char* ch)
 	}
 
 	if (Dungeon::visible[pos]) {
-		CellEmitter::center(pos)->burst(PoisonParticle::SPLASH, 3);
+		CellEmitter::center(pos)->burst(PoisonParticle::splash(), 3);
 	}
 }
 
@@ -273,7 +273,7 @@ void Sungrass::activate(Char* ch)
 	}
 
 	if (Dungeon::visible[pos]) {
-		CellEmitter::get(pos)->start(ShaftParticle::FACTORY, 0.2f, 3);
+		CellEmitter::get(pos)->start(ShaftParticle::factory(), 0.2f, 3);
 	}
 }
 
@@ -349,7 +349,7 @@ void Earthroot::activate(Char* ch)
 	}
 
 	if (Dungeon::visible[pos]) {
-		CellEmitter::bottom(pos)->start(EarthParticle::FACTORY, 0.05f, 8);
+		CellEmitter::bottom(pos)->start(EarthParticle::factory(), 0.05f, 8);
 		Camera::mainCamera->shake(1, 0.4f);
 	}
 }

@@ -75,7 +75,7 @@ bool Burning::act()
 		{
 		
 			((Thief*)target)->item = NULL;
-			target->sprite->emitter()->burst(ElmoParticle::FACTORY, 6);
+			target->sprite->emitter()->burst(ElmoParticle::factory(), 6);
 		}
 	}
 	else 

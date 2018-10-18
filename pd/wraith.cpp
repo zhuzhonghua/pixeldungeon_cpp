@@ -80,7 +80,7 @@ Wraith* Wraith::spawnAt(int pos)
 		w->sprite->alpha(0);
 		w->sprite->parent->add(new AlphaTweener(w->sprite, 1, 0.5f));
 
-		w->sprite->emitter()->burst(ShadowParticle::CURSE, 5);
+		w->sprite->emitter()->burst(ShadowParticle::curse(), 5);
 
 		return w;
 	}
