@@ -89,6 +89,7 @@
     <ClCompile Include="engine\image.cpp" />
     <ClCompile Include="engine\keys.cpp" />
     <ClCompile Include="engine\movieclip.cpp" />
+    <ClCompile Include="engine\music.cpp" />
     <ClCompile Include="engine\ninepatch.cpp" />
     <ClCompile Include="engine\noosascript.cpp" />
     <ClCompile Include="engine\pathfinder.cpp" />
@@ -298,6 +299,7 @@
     <ClInclude Include="engine\button.h" />
     <ClInclude Include="engine\callback.h" />
     <ClInclude Include="engine\camera.h" />
+    <ClInclude Include="engine\checkbox.h" />
     <ClInclude Include="engine\colorblock.h" />
     <ClInclude Include="engine\component.h" />
     <ClInclude Include="engine\emitter.h" />
@@ -308,6 +310,7 @@
     <ClInclude Include="engine\image.h" />
     <ClInclude Include="engine\keys.h" />
     <ClInclude Include="engine\movieclip.h" />
+    <ClInclude Include="engine\music.h" />
     <ClInclude Include="engine\ninepatch.h" />
     <ClInclude Include="engine\noosascript.h" />
     <ClInclude Include="engine\pathfinder.h" />

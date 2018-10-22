@@ -9,6 +9,9 @@
 #include "pixelparticle.h"
 #include "bpt.h"
 #include "startscene.h"
+#include "music.h"
+
+using namespace Zengine;
 
 namespace{
 	class DashboardItemBadge :public DashboardItem{
@@ -55,6 +58,9 @@ namespace{
 void TitleScene::init()
 {
 	PixelScene::init();
+
+	Music::inst()->play(Assets::THEME, true);
+	Music::inst()->volume(10);
 
 	uiCamera->visible = false;
 	//

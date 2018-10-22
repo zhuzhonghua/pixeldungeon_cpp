@@ -10,6 +10,7 @@
 #include <SDL_opengl.h>
 #include "SDL_image.h"
 #include "SDL_ttf.h"
+#include "SDL_mixer.h"
 #include "SDL_draw.h"
 //#include <GL/gl.h>
 //#include <GL/glu.h>

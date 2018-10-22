@@ -669,6 +669,9 @@
     <ClCompile Include="engine\atlas.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="engine\music.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gfx\SDL_draw.h">
@@ -1278,6 +1281,12 @@
       <Filter>pd</Filter>
     </ClInclude>
     <ClInclude Include="engine\stdafx.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\checkbox.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\music.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>

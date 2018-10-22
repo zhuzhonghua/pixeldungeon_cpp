@@ -57,6 +57,21 @@ void Game::init()
 	glEnable(GL_SCISSOR_TEST);
 
 	TTF_Init();
+
+	// setup sould
+	int flag = MIX_INIT_FLAC | MIX_INIT_MOD | MIX_INIT_MP3 | MIX_INIT_OGG;
+	if (Mix_Init(flag) & flag != flag)
+	{
+		std::string err = Mix_GetError();
+		fatalError("Mix_Init error "+err);
+	}
+
+	// 44100 cd rate, more cpu power
+	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 1024) == -1)
+	{
+		std::string err = Mix_GetError();
+		fatalError("Mix_OpenAudio error " + err);
+	}
 }
 
 void Game::run()
