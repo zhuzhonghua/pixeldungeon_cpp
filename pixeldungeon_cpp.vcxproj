@@ -74,6 +74,7 @@
   <ItemGroup>
     <ClCompile Include="engine\alphatweener.cpp" />
     <ClCompile Include="engine\atlas.cpp" />
+    <ClCompile Include="engine\audio_sample.cpp" />
     <ClCompile Include="engine\bitmaptext.cpp" />
     <ClCompile Include="engine\bitmaptextmultiline.cpp" />
     <ClCompile Include="engine\bitmaskemitter.cpp" />
@@ -291,6 +292,7 @@
   <ItemGroup>
     <ClInclude Include="engine\alphatweener.h" />
     <ClInclude Include="engine\atlas.h" />
+    <ClInclude Include="engine\audio_sample.h" />
     <ClInclude Include="engine\bitmaptext.h" />
     <ClInclude Include="engine\bitmaptextmultiline.h" />
     <ClInclude Include="engine\bitmaskemitter.h" />

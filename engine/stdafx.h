@@ -23,6 +23,7 @@
 #include <iostream>
 #include <sstream>
 #include <algorithm>
+#include <map>
 
 static inline void fatalError(std::string info)
 {

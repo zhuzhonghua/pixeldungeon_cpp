@@ -672,6 +672,9 @@
     <ClCompile Include="engine\music.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="engine\audio_sample.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gfx\SDL_draw.h">
@@ -1287,6 +1290,9 @@
       <Filter>engine</Filter>
     </ClInclude>
     <ClInclude Include="engine\music.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\audio_sample.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>

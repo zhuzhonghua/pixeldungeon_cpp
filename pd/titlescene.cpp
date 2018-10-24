@@ -10,6 +10,7 @@
 #include "bpt.h"
 #include "startscene.h"
 #include "music.h"
+#include "audio_sample.h"
 
 using namespace Zengine;
 
@@ -179,7 +180,7 @@ void DashboardItem::layout()
 void DashboardItem::onTouchDown()
 {
 	image->brightness(1.5f);
-	//Sample.INSTANCE.play(Assets.SND_CLICK, 1, 1, 0.8f);
+	AudioSample::inst()->play(Assets::SND_CLICK);
 }
 
 void DashboardItem::onTouchUp()

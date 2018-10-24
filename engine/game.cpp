@@ -67,7 +67,7 @@ void Game::init()
 	}
 
 	// 44100 cd rate, more cpu power
-	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 1024) == -1)
+	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) == -1)
 	{
 		std::string err = Mix_GetError();
 		fatalError("Mix_OpenAudio error " + err);

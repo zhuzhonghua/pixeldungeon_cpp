@@ -34,11 +34,11 @@ const char* VERT_SHADER_TEST = R"(
 
 uniform mat4 uCamera;
 uniform mat4 uModel;
-attribute vec2 aXYZW;
+attribute vec2 aPos;
 attribute vec2 aUV;
 varying vec2 vUV;
 void main() {
-	gl_Position.xy = (uCamera * uModel * vec4(aXYZW, 0, 1)).xy;
+	gl_Position.xy = (uCamera * uModel * vec4(aPos, 0, 1)).xy;
 	//gl_Position.xy = aXYZW;
 	gl_Position.z = 0.0;
 	gl_Position.w = 1.0;
@@ -71,7 +71,7 @@ NoosaScript::NoosaScript()
 	uTex = uniform("uTex");
 	uColorM = uniform("uColorM");
 	uColorA = uniform("uColorA");
-	aXY = attribute("aXYZW");
+	aXY = attribute("aPos");
 	aUV = attribute("aUV");
 }
 
